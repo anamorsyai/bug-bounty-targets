@@ -274,6 +274,104 @@
     "added": 50
   },
   {
+    "name": "HostAfrica",
+    "country": "South Africa",
+    "type": "self-hosted bounty",
+    "url": "https://www.hostafrica.com/security/vulnerability-disclosure/",
+    "scope": "hostafrica.* (ZA/KE/NG/GH) + panel + api, own accounts only (customer content OUT)",
+    "contact": "security@hostafrica.com (free 1-mo test credit via email)",
+    "rewards": "Critical 2500-5000 / High 750-1500 / Med 200-500 / Low 0-200 USD bank transfer, 12k/yr pool",
+    "safe": "Cross-tenant testing expressly allowed with 2 own accounts, X-BBP-Researcher header, 10rps",
+    "notes": "Hosting SaaS Africa, 2d ack 10d triage 21d pay, honest small-team policy",
+    "desc": "African hosting SaaS with panel, API and free test accounts.",
+    "added": 51,
+    "rank": 19
+  },
+  {
+    "name": "LoginRadius",
+    "country": "India",
+    "type": "self-hosted bounty",
+    "url": "https://www.loginradius.com/bug-bounty",
+    "scope": "loginradius.com + adminconsole + api (CIAM)",
+    "contact": "security@loginradius.com (no other channels)",
+    "rewards": "Min 50 USD, significantly more for serious user-risk issues",
+    "safe": "5d response, InfoSec decides, remediation may take months",
+    "notes": "Identity SaaS - auth bugs goldmine",
+    "desc": "Customer-identity (CIAM) SaaS platform.",
+    "added": 52,
+    "rank": 20
+  },
+  {
+    "name": "Plumsail",
+    "country": "Global",
+    "type": "self-hosted bounty",
+    "url": "https://plumsail.com/security/bug-bounty/",
+    "scope": "Plumsail web apps + APIs + infra (RCE/stored XSS/SQLi/auth/data/logic)",
+    "contact": "security@plumsail.com (48h ack, 30d payout post-fix)",
+    "rewards": "To 500 USD discretionary",
+    "safe": "First reporter, duplicates/known-issues unpaid",
+    "notes": "SharePoint-forms SaaS, use-case required in report",
+    "desc": "SharePoint forms/documents SaaS for businesses.",
+    "added": 53,
+    "rank": 21
+  },
+  {
+    "name": "MyPup",
+    "country": "Netherlands",
+    "type": "self-hosted bounty",
+    "url": "https://www.my-pup.com/bugs-and-vulnerabilities",
+    "scope": "login.mypup.app + mypup.app platform only (3rd-party SaaS OUT)",
+    "contact": "infosecurity at my-pup.com",
+    "rewards": "Exceptional 850 / Critical 600 / High 350 / Medium 175 / Low 75 EUR PayPal/IBAN",
+    "safe": "Intigriti CVSS contextual, 14d reply attempt",
+    "notes": "Parcel-locker SaaS NL, precise tier table",
+    "desc": "Parcel-locker logistics SaaS (Netherlands).",
+    "added": 54,
+    "rank": 22
+  },
+  {
+    "name": "alwaysdata",
+    "country": "France",
+    "type": "self-hosted bounty",
+    "url": "https://help.alwaysdata.com/en/docs/technical-specifications/bug-bounty/",
+    "scope": "alwaysdata.com + admin + webmail + api + ssh/ftp/webdav accounts",
+    "contact": "bug-tracker only (email/support rejected!)",
+    "rewards": "Low 50 / Medium 200 / High 350 / Critical 500 EUR, paid on patch",
+    "safe": "24h report deadline post-discovery, no disclosure before patch+agree",
+    "notes": "Hosting SaaS FR, fix goal 10d post-triage",
+    "desc": "French hosting SaaS with panel, mail and API scope.",
+    "added": 55,
+    "rank": 23
+  },
+  {
+    "name": "Conveyor",
+    "country": "USA",
+    "type": "self-hosted bounty",
+    "url": "https://www.conveyor.com/legal/responsible-disclosure",
+    "scope": "app/api/auth/trust/mcp.conveyor.com",
+    "contact": "security@conveyor.com (bill.com payouts, docs may be needed)",
+    "rewards": "Cash + prizes, discretionary (bounty can stop anytime)",
+    "safe": "Fix-first disclosure",
+    "notes": "Trust/security-review SaaS incl. MCP endpoint",
+    "desc": "Vendor-trust review SaaS with app, API and MCP surface.",
+    "added": 56,
+    "rank": 24
+  },
+  {
+    "name": "Asiri",
+    "country": "Nigeria",
+    "type": "self-hosted bounty",
+    "url": "https://asiri.ng/security/disclosure",
+    "scope": "app.asiri.ng + API + connectors + audit trail + badges (customer workspaces OUT)",
+    "contact": "via site (Lagos, 1 working day ack, triage 3d)",
+    "rewards": "Critical N250-600k / High N100-250k / Med N40-100k / Low N15-40k naira transfer, no invoice/NDA",
+    "safe": "Safe harbor in-scope, stop+delete on customer data, impact decides",
+    "notes": "Compliance SaaS NG, pays then publishes, argues allowed",
+    "desc": "Compliance-registers SaaS (Nigeria) with API and connectors.",
+    "added": 57,
+    "rank": 25
+  },
+  {
     "name": "Floy",
     "country": "Germany",
     "type": "self VRP",
@@ -287,7 +385,7 @@
     "added": 10,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 19
+    "rank": 26
   },
   {
     "name": "hCaptcha",
@@ -303,7 +401,7 @@
     "added": 37,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 20
+    "rank": 27
   },
   {
     "name": "ReadMe",
@@ -319,7 +417,7 @@
     "added": 38,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 21
+    "rank": 28
   },
   {
     "name": "Fastmail",
@@ -335,7 +433,7 @@
     "added": 27,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 22
+    "rank": 29
   },
   {
     "name": "Athento",
@@ -351,7 +449,7 @@
     "added": 28,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 23
+    "rank": 30
   },
   {
     "name": "Bright Data",
@@ -367,7 +465,7 @@
     "added": 16,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 24
+    "rank": 31
   },
   {
     "name": "Zoho",
@@ -383,7 +481,7 @@
     "added": 13,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 25
+    "rank": 32
   },
   {
     "name": "ClickPost",
@@ -399,7 +497,7 @@
     "added": 14,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 26
+    "rank": 33
   },
   {
     "name": "Wildix",
@@ -415,7 +513,7 @@
     "added": 30,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 27
+    "rank": 34
   },
   {
     "name": "Missive",
@@ -431,7 +529,7 @@
     "added": 29,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 28
+    "rank": 35
   },
   {
     "name": "Zenarmor",
@@ -447,7 +545,7 @@
     "added": 32,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 29
+    "rank": 36
   },
   {
     "name": "CodeRabbit",
@@ -463,7 +561,7 @@
     "added": 1,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 30
+    "rank": 37
   },
   {
     "name": "Ably",
@@ -479,7 +577,7 @@
     "added": 3,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 31
+    "rank": 38
   },
   {
     "name": "Atmail",
@@ -495,7 +593,7 @@
     "added": 4,
     "difficulty": "easy",
     "scopeSize": "wide",
-    "rank": 32
+    "rank": 39
   },
   {
     "name": "CleanShot",
@@ -511,7 +609,7 @@
     "added": 5,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 33
+    "rank": 40
   },
   {
     "name": "Glia",
@@ -527,7 +625,7 @@
     "added": 6,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 34
+    "rank": 41
   },
   {
     "name": "Socket",
@@ -543,7 +641,7 @@
     "added": 7,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 35
+    "rank": 42
   },
   {
     "name": "Kontent.ai",
@@ -559,7 +657,7 @@
     "added": 8,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 36
+    "rank": 43
   },
   {
     "name": "Simbase",
@@ -575,7 +673,7 @@
     "added": 9,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 37
+    "rank": 44
   },
   {
     "name": "GitKraken",
@@ -591,7 +689,7 @@
     "added": 18,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 38
+    "rank": 45
   },
   {
     "name": "InterWorx",
@@ -607,7 +705,7 @@
     "added": 19,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 39
+    "rank": 46
   },
   {
     "name": "Optimoz",
@@ -623,7 +721,7 @@
     "added": 17,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 40
+    "rank": 47
   },
   {
     "name": "Birdeye.so",
@@ -639,7 +737,7 @@
     "added": 23,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 41
+    "rank": 48
   },
   {
     "name": "Pokee.ai",
@@ -655,7 +753,7 @@
     "added": 20,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 42
+    "rank": 49
   },
   {
     "name": "Dashverse",
@@ -671,7 +769,7 @@
     "added": 25,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 43
+    "rank": 50
   },
   {
     "name": "Beggi Beggi",
@@ -687,7 +785,7 @@
     "added": 26,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 44
+    "rank": 51
   },
   {
     "name": "Cybozu",
@@ -703,7 +801,7 @@
     "added": 15,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 45
+    "rank": 52
   },
   {
     "name": "Genians",
@@ -719,7 +817,7 @@
     "added": 39,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 46
+    "rank": 53
   },
   {
     "name": "HSPACE",
@@ -735,7 +833,7 @@
     "added": 40,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 47
+    "rank": 54
   },
   {
     "name": "Fusiora",
@@ -751,7 +849,7 @@
     "added": 35,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 48
+    "rank": 55
   },
   {
     "name": "Paheko",
@@ -767,7 +865,7 @@
     "added": 36,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 49
+    "rank": 56
   },
   {
     "name": "Range (docs.range.org)",
@@ -783,6 +881,6 @@
     "added": 2,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 50
+    "rank": 57
   }
 ]
