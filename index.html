@@ -43,6 +43,20 @@ input{flex:2;min-width:220px}select{flex:1;min-width:150px;cursor:pointer}
 .btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
 footer{margin:30px 0 6px;color:var(--mut);font-size:13px;text-align:center;line-height:1.8}
 code{background:#0e1626;padding:2px 6px;border-radius:6px;color:#a5f3fc}
+.reset{background:transparent;border:1px dashed var(--border);color:var(--mut);border-radius:10px;padding:10px 14px;font-size:14px;cursor:pointer;flex:0;white-space:nowrap}
+.reset:hover{color:var(--txt);border-color:var(--acc)}
+.err{background:rgba(244,63,94,.1);border:1px solid rgba(244,63,94,.4);color:#fda4af;border-radius:12px;padding:14px;font-size:14px}
+@media(max-width:640px){
+ body{padding:14px 12px 30px}
+ .hero{padding:20px 16px;border-radius:16px}
+ .bar{top:6px;gap:8px;padding:10px}
+ input{flex:1 1 100%;font-size:16px}
+ select{flex:1 1 46%;min-width:0;font-size:13px;padding:10px 8px}
+ .reset{flex:1 1 100%}
+ .grid{grid-template-columns:1fr;gap:12px}
+ .card:hover{transform:none;box-shadow:none}
+ .stat{min-width:0;flex:1;padding:8px 10px}
+}
 </style>
 </head>
 <body>
@@ -72,6 +86,7 @@ code{background:#0e1626;padding:2px 6px;border-radius:6px;color:#a5f3fc}
 <option value="narrow">🎯 Narrowest first</option>
 <option value="az">🔤 Name A–Z</option>
 </select>
+<button class="reset" id="reset" type="button">✕ Reset</button>
 </div>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
@@ -79,7 +94,7 @@ code{background:#0e1626;padding:2px 6px;border-radius:6px;color:#a5f3fc}
 <script>
 let DATA=[];
 const grid=document.getElementById('grid'),q=document.getElementById('q'),fT=document.getElementById('fType'),fC=document.getElementById('fCountry'),fD=document.getElementById('fDiff'),fS=document.getElementById('fScope'),fSort=document.getElementById('fSort'),count=document.getElementById('count');
-fetch('programs.json').then(r=>r.json()).then(d=>{DATA=d;init();});
+fetch('programs.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(d=>{DATA=d;init();}).catch(()=>{grid.innerHTML='<div class="err">Could not load programs.json — check connection and hard-refresh (Ctrl/Cmd+Shift+R).</div>';});
 function init(){
   const types=[...new Set(DATA.map(x=>x.type).filter(Boolean))].sort();
   const countries=[...new Set(DATA.map(x=>x.country).filter(Boolean))].sort();
@@ -90,6 +105,7 @@ function init(){
   document.getElementById('sSelf').textContent=DATA.filter(x=>(x.type||'').includes('self')).length;
   render();
   q.addEventListener('input',render);fT.addEventListener('change',render);fC.addEventListener('change',render);fD.addEventListener('change',render);fS.addEventListener('change',render);fSort.addEventListener('change',render);
+  document.getElementById('reset').addEventListener('click',()=>{q.value='';fT.value='';fC.value='';fD.value='';fS.value='';fSort.value='added';render();q.focus();});
 }
 function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function render(){
