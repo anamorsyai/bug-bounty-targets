@@ -478,5 +478,29 @@
     "safe": "Scope-only, no disclosure before patch, delete accessed data",
     "notes": "Obscure KR SaaS, Markdown/PDF/Word PoC accepted",
     "desc": "Obscure Korean SaaS with sub-path + API scope."
+  },
+  {
+    "name": "Smackdab.ai",
+    "country": "USA",
+    "type": "self-hosted bounty",
+    "url": "https://smackdab.ai/legal/bug-bounty-program/",
+    "scope": "app.smackdab.ai + docs.smackdab.ai APIs + iOS/Android apps (marketing site OUT)",
+    "contact": "security@smackdab.ai Subject: Bug Bounty Report: [title]",
+    "rewards": "Critical 100-300 / High 50-150 / Med 25-75 / Low 0-25 USD via PayPal, max 300",
+    "safe": "Pre-launch startup, CVSS3.1 + business context, one issue per email",
+    "notes": "Legal-AI SaaS pre-launch = low-hanging fruit",
+    "desc": "Legal-AI SaaS (pre-launch startup) with web app, APIs and mobile apps."
+  },
+  {
+    "name": "FlexiFunnels",
+    "country": "India",
+    "type": "self-hosted bounty",
+    "url": "https://flexifunnels.com/bug-bounty",
+    "scope": "FlexiFunnels platform (funnel builder SaaS)",
+    "contact": "javeed@flexifunnels.com",
+    "rewards": "Tiers 50 / 100 / 250 / 500 USD by severity",
+    "safe": "Good-faith only, one vuln per report, no law violation",
+    "notes": "Founder-direct email, IDOR/SQLi/RCE/SSRF scope",
+    "desc": "Funnel-builder SaaS with direct founder reporting email."
   }
 ]
