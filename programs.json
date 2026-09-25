@@ -257,7 +257,7 @@
     "type": "self bounty GitHub",
     "url": "https://github.com/textmaster/bugbounty/blob/main/SECURITY.md",
     "scope": "app/api.textmaster.com Core Crit eligible",
-    "contact": "GitHub SECURITY",
+    "contact": "bounty@textmaster.com (no support contact for bounty)",
     "rewards": "CVSS 1-10 = 100-5000 (10=5000)",
     "safe": "Core vs Non-core env",
     "notes": "Translation SaaS",
@@ -430,5 +430,53 @@
     "safe": "Coordinated, open-source project",
     "notes": "Nonprofit-management SaaS, honest 150k budget note",
     "desc": "Nonprofit-management open-source SaaS (Paheko.cloud)."
+  },
+  {
+    "name": "hCaptcha",
+    "country": "USA",
+    "type": "self-hosted bounty",
+    "url": "https://github.com/hCaptcha/bounties",
+    "scope": "hcaptcha.com main page + dashboard + public open-source code",
+    "contact": "support@hcaptcha.com CC security@hcaptcha.com",
+    "rewards": "Small to 100 / Medium-Large-Critical 100-1000 USD via PayPal (charity option)",
+    "safe": "No GitHub Issues/public forum reports, user-data confidentiality",
+    "notes": "Bot-protection SaaS, found via GitHub bounties repo",
+    "desc": "Bot-protection SaaS (CAPTCHA alternative) with dashboard + SDKs."
+  },
+  {
+    "name": "ReadMe",
+    "country": "USA",
+    "type": "self-hosted bounty",
+    "url": "https://docs.readme.com/main/docs/bug-bounty-program",
+    "scope": "metrics.readme.io + dash.readme.io/com + hosted project doc sites (free trial, Refactored exp. only)",
+    "contact": "security@readme.io",
+    "rewards": "Low 250 / Medium 500 / High 1000 / Critical 3000 USD",
+    "safe": "Free trial only, no main-site/customer-site testing w/o consent",
+    "notes": "API-docs SaaS, trial extendable via email",
+    "desc": "API-documentation SaaS (hosts developer docs sites)."
+  },
+  {
+    "name": "Genians",
+    "country": "South Korea",
+    "type": "self-hosted bounty",
+    "url": "https://www.genians.co.kr/bug-bounty/policy/",
+    "scope": "Genian NAC 4.x + Cloud NAC CSM my.demo.genians.co.kr + Device Platform API pi-api.genians.com",
+    "contact": "dedicated signup + report via site (KR/EN)",
+    "rewards": "Low 240k-480k / Med 720k-1800k / High 2.5M-3.6M / Crit 5.4M-9M KRW (USD for foreigners)",
+    "safe": "Dedicated bounty signup required, scope-only, monthly committee",
+    "notes": "NAC security SaaS, bank transfer, patch-month+1 payout",
+    "desc": "Network-access-control SaaS with cloud console and APIs."
+  },
+  {
+    "name": "HSPACE",
+    "country": "South Korea",
+    "type": "self-hosted bounty",
+    "url": "https://hspace.io/bugbounty",
+    "scope": "In-scope sub-paths + API endpoints on page (3rd-party OUT)",
+    "contact": "report via site (KR)",
+    "rewards": "Low 50k-100k / Med 100k-300k / High 300k-800k / Crit 800k-2M KRW, paid 25th monthly",
+    "safe": "Scope-only, no disclosure before patch, delete accessed data",
+    "notes": "Obscure KR SaaS, Markdown/PDF/Word PoC accepted",
+    "desc": "Obscure Korean SaaS with sub-path + API scope."
   }
 ]
