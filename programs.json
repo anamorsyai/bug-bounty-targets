@@ -12,7 +12,8 @@
     "desc": "AI code-review bot that scans pull requests for bugs and security issues.",
     "added": 1,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 23
   },
   {
     "name": "Range (docs.range.org)",
@@ -27,7 +28,8 @@
     "desc": "Web platform + APIs with auth flows and user data handling.",
     "added": 2,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 43
   },
   {
     "name": "Ably",
@@ -42,7 +44,8 @@
     "desc": "Realtime messaging API platform (pub/sub, WebSockets) for apps.",
     "added": 3,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 24
   },
   {
     "name": "Atmail",
@@ -57,7 +60,8 @@
     "desc": "Email hosting software and cloud email services for businesses.",
     "added": 4,
     "difficulty": "easy",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 25
   },
   {
     "name": "CleanShot",
@@ -72,7 +76,8 @@
     "desc": "Screenshot/recording tool for Mac plus cloud link-sharing service.",
     "added": 5,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 26
   },
   {
     "name": "Glia",
@@ -87,7 +92,8 @@
     "desc": "Customer-interaction SaaS (chat, voice, video support) for enterprises.",
     "added": 6,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 27
   },
   {
     "name": "Socket",
@@ -102,7 +108,8 @@
     "desc": "Supply-chain security scanner that flags risky open-source packages.",
     "added": 7,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 28
   },
   {
     "name": "Kontent.ai",
@@ -117,7 +124,8 @@
     "desc": "Headless CMS SaaS for managing and delivering content via API.",
     "added": 8,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 29
   },
   {
     "name": "Simbase",
@@ -132,7 +140,8 @@
     "desc": "IoT SIM connectivity-management SaaS platform.",
     "added": 9,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 30
   },
   {
     "name": "Floy",
@@ -147,7 +156,8 @@
     "desc": "Medical-AI SaaS for radiology screening (Germany).",
     "added": 10,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 12
   },
   {
     "name": "LiveAgent",
@@ -162,7 +172,8 @@
     "desc": "Helpdesk + live-chat SaaS with trial accounts (*.ladesk.com).",
     "added": 11,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 1
   },
   {
     "name": "FlowHunt",
@@ -177,7 +188,8 @@
     "desc": "AI chatbot/workflow-builder SaaS (same family as LiveAgent).",
     "added": 12,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 2
   },
   {
     "name": "Zoho",
@@ -192,7 +204,8 @@
     "desc": "Huge business-app suite SaaS (CRM, ManageEngine, Site24x7 and more).",
     "added": 13,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 18
   },
   {
     "name": "ClickPost",
@@ -207,7 +220,8 @@
     "desc": "Logistics/shipping-management SaaS (India).",
     "added": 14,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 19
   },
   {
     "name": "Cybozu",
@@ -222,7 +236,8 @@
     "desc": "Collaboration SaaS suite (kintone, Garoon, Office) — test on dev env only.",
     "added": 15,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 38
   },
   {
     "name": "Bright Data",
@@ -237,7 +252,8 @@
     "desc": "Proxy-network and web-data-collection SaaS platform.",
     "added": 16,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 17
   },
   {
     "name": "Optimoz",
@@ -252,7 +268,8 @@
     "desc": "AI marketing-tool SaaS suite (multiple web properties).",
     "added": 17,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 33
   },
   {
     "name": "GitKraken",
@@ -267,7 +284,8 @@
     "desc": "Git client and dev-collaboration desktop/web tools.",
     "added": 18,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 31
   },
   {
     "name": "InterWorx",
@@ -282,7 +300,8 @@
     "desc": "Web-hosting control-panel software and portal.",
     "added": 19,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 32
   },
   {
     "name": "Pokee.ai",
@@ -297,7 +316,8 @@
     "desc": "AI agent/automation SaaS platform with APIs and billing flows.",
     "added": 20,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 35
   },
   {
     "name": "MSPBots.ai",
@@ -312,7 +332,8 @@
     "desc": "MSP automation/analytics SaaS — multi-tenant, IDOR-prone.",
     "added": 21,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 4
   },
   {
     "name": "TextMaster",
@@ -327,7 +348,8 @@
     "desc": "Translation and content-writing SaaS (web app + API).",
     "added": 22,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 6
   },
   {
     "name": "Birdeye.so",
@@ -342,7 +364,8 @@
     "desc": "Market-data SaaS platform with website + public APIs.",
     "added": 23,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 34
   },
   {
     "name": "Post Affiliate Pro",
@@ -357,7 +380,8 @@
     "desc": "Affiliate-tracking and management SaaS.",
     "added": 24,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 3
   },
   {
     "name": "Dashverse",
@@ -372,7 +396,8 @@
     "desc": "AI entertainment SaaS (Dashtoon comics, short-video apps).",
     "added": 25,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 36
   },
   {
     "name": "Beggi Beggi",
@@ -387,7 +412,8 @@
     "desc": "Small consumer web SaaS/platform with direct email reporting.",
     "added": 26,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 37
   },
   {
     "name": "Fastmail",
@@ -402,7 +428,8 @@
     "desc": "Email-hosting SaaS (plus Topicbox/Pobox) with trial accounts.",
     "added": 27,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 15
   },
   {
     "name": "Athento",
@@ -417,7 +444,8 @@
     "desc": "Document-management SaaS (Spanish, obscure) with public fixed list.",
     "added": 28,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 16
   },
   {
     "name": "Missive",
@@ -432,7 +460,8 @@
     "desc": "Team-email collaboration SaaS.",
     "added": 29,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 21
   },
   {
     "name": "Wildix",
@@ -447,7 +476,8 @@
     "desc": "Cloud PBX/UCaaS SaaS (calls, video, chat).",
     "added": 30,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 20
   },
   {
     "name": "ClickTime",
@@ -462,7 +492,8 @@
     "desc": "Time-tracking and expenses SaaS.",
     "added": 31,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 7
   },
   {
     "name": "Zenarmor",
@@ -477,7 +508,8 @@
     "desc": "Firewall/network-security SaaS with cloud dashboard.",
     "added": 32,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 22
   },
   {
     "name": "Survicate",
@@ -492,7 +524,8 @@
     "desc": "Survey/feedback SaaS with SDKs and export API.",
     "added": 33,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 5
   },
   {
     "name": "Shoper",
@@ -507,7 +540,8 @@
     "desc": "E-commerce shop SaaS (Polish) with free trial stores.",
     "added": 34,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 10
   },
   {
     "name": "Fusiora",
@@ -522,7 +556,8 @@
     "desc": "VPS/cloud-provisioning SaaS with billing logic.",
     "added": 35,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 41
   },
   {
     "name": "Paheko",
@@ -537,7 +572,8 @@
     "desc": "Nonprofit-management open-source SaaS (Paheko.cloud).",
     "added": 36,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 42
   },
   {
     "name": "hCaptcha",
@@ -552,7 +588,8 @@
     "desc": "Bot-protection SaaS (CAPTCHA alternative) with dashboard + SDKs.",
     "added": 37,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 13
   },
   {
     "name": "ReadMe",
@@ -567,7 +604,8 @@
     "desc": "API-documentation SaaS (hosts developer docs sites).",
     "added": 38,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 14
   },
   {
     "name": "Genians",
@@ -582,7 +620,8 @@
     "desc": "Network-access-control SaaS with cloud console and APIs.",
     "added": 39,
     "difficulty": "medium",
-    "scopeSize": "wide"
+    "scopeSize": "wide",
+    "rank": 39
   },
   {
     "name": "HSPACE",
@@ -597,7 +636,8 @@
     "desc": "Obscure Korean SaaS with sub-path + API scope.",
     "added": 40,
     "difficulty": "medium",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 40
   },
   {
     "name": "Smackdab.ai",
@@ -612,7 +652,8 @@
     "desc": "Legal-AI SaaS (pre-launch startup) with web app, APIs and mobile apps.",
     "added": 41,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 8
   },
   {
     "name": "FlexiFunnels",
@@ -627,7 +668,8 @@
     "desc": "Funnel-builder SaaS with direct founder reporting email.",
     "added": 42,
     "difficulty": "easy",
-    "scopeSize": "narrow"
+    "scopeSize": "narrow",
+    "rank": 11
   },
   {
     "name": "HypeHost",
@@ -642,6 +684,7 @@
     "desc": "VPS/hosting SaaS (Brazil) with panel, client area and support scope.",
     "added": 43,
     "difficulty": "easy",
-    "scopeSize": "medium"
+    "scopeSize": "medium",
+    "rank": 9
   }
 ]
