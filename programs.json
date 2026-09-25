@@ -8,7 +8,8 @@
     "contact": "see policy",
     "rewards": "To 20000 (Crit 20k High 5k Med 1k Low 500)",
     "safe": "Full safe harbor",
-    "notes": "Low crowd, high pay"
+    "notes": "Low crowd, high pay",
+    "desc": "AI code-review bot that scans pull requests for bugs and security issues."
   },
   {
     "name": "Range (docs.range.org)",
@@ -19,7 +20,8 @@
     "contact": "see policy",
     "rewards": "To 10000",
     "safe": "Full",
-    "notes": "Obscure"
+    "notes": "Obscure",
+    "desc": "Web platform + APIs with auth flows and user data handling."
   },
   {
     "name": "Ably",
@@ -30,7 +32,8 @@
     "contact": "disclosure@ably.com",
     "rewards": "To 5000",
     "safe": "Full, AI-only reports rejected",
-    "notes": "Realtime SaaS"
+    "notes": "Realtime SaaS",
+    "desc": "Realtime messaging API platform (pub/sub, WebSockets) for apps."
   },
   {
     "name": "Atmail",
@@ -41,7 +44,8 @@
     "contact": "security@atmail.com",
     "rewards": "To 5000",
     "safe": "Full",
-    "notes": "Email SaaS"
+    "notes": "Email SaaS",
+    "desc": "Email hosting software and cloud email services for businesses."
   },
   {
     "name": "CleanShot",
@@ -52,7 +56,8 @@
     "contact": "see policy",
     "rewards": "50-4000",
     "safe": "Self policy",
-    "notes": "Mac + Cloud"
+    "notes": "Mac + Cloud",
+    "desc": "Screenshot/recording tool for Mac plus cloud link-sharing service."
   },
   {
     "name": "Glia",
@@ -63,7 +68,8 @@
     "contact": "see policy",
     "rewards": "200+ USD min",
     "safe": "Full",
-    "notes": "Low crowd"
+    "notes": "Low crowd",
+    "desc": "Customer-interaction SaaS (chat, voice, video support) for enterprises."
   },
   {
     "name": "Socket",
@@ -74,7 +80,8 @@
     "contact": "see policy",
     "rewards": "50+ USD min",
     "safe": "Full",
-    "notes": "Supply-chain SaaS"
+    "notes": "Supply-chain SaaS",
+    "desc": "Supply-chain security scanner that flags risky open-source packages."
   },
   {
     "name": "Kontent.ai",
@@ -85,7 +92,8 @@
     "contact": "see policy",
     "rewards": "200",
     "safe": "Full",
-    "notes": "Headless CMS SaaS"
+    "notes": "Headless CMS SaaS",
+    "desc": "Headless CMS SaaS for managing and delivering content via API."
   },
   {
     "name": "Simbase",
@@ -96,7 +104,8 @@
     "contact": "see policy",
     "rewards": "200",
     "safe": "Full",
-    "notes": "IoT SIM SaaS"
+    "notes": "IoT SIM SaaS",
+    "desc": "IoT SIM connectivity-management SaaS platform."
   },
   {
     "name": "Floy",
@@ -107,7 +116,8 @@
     "contact": "security@floy.com",
     "rewards": "Low275 Med675 High1200 Crit1800 Exc2500 EUR",
     "safe": "No DoS/heavy auto, 7d reply",
-    "notes": "Since Jan2025, STORED"
+    "notes": "Since Jan2025, STORED",
+    "desc": "Medical-AI SaaS for radiology screening (Germany)."
   },
   {
     "name": "LiveAgent",
@@ -118,7 +128,8 @@
     "contact": "support@liveagent.com",
     "rewards": "100 USD PayPal+invoice 30d first-only",
     "safe": "90d fix, no delete/DDoS/social",
-    "notes": "Helpdesk SaaS, STORED"
+    "notes": "Helpdesk SaaS, STORED",
+    "desc": "Helpdesk + live-chat SaaS with trial accounts (*.ladesk.com)."
   },
   {
     "name": "FlowHunt",
@@ -129,7 +140,8 @@
     "contact": "support@flowhunt.io",
     "rewards": "Crit100 Med50 PayPal",
     "safe": "90d",
-    "notes": "LiveAgent clone SaaS"
+    "notes": "LiveAgent clone SaaS",
+    "desc": "AI chatbot/workflow-builder SaaS (same family as LiveAgent)."
   },
   {
     "name": "Zoho",
@@ -140,7 +152,8 @@
     "contact": "portal",
     "rewards": "Low50 Med200 High800 Crit3000 USD (INR wire/PayPal/gift, 10% TDS IN)",
     "safe": "3d validate",
-    "notes": "Huge SaaS suite, RECOMMENDED"
+    "notes": "Huge SaaS suite, RECOMMENDED",
+    "desc": "Huge business-app suite SaaS (CRM, ManageEngine, Site24x7 and more)."
   },
   {
     "name": "ClickPost",
@@ -151,7 +164,8 @@
     "contact": "security@clickpost.in",
     "rewards": "INR1500-14000",
     "safe": "No Nmap/SSL auto scan",
-    "notes": "Logistics SaaS"
+    "notes": "Logistics SaaS",
+    "desc": "Logistics/shipping-management SaaS (India)."
   },
   {
     "name": "Cybozu",
@@ -162,7 +176,8 @@
     "contact": "portal account needed",
     "rewards": "RCE2M JPY SQLi400k-1.6M XSS100-400k",
     "safe": "JP/EN, no prod test, bank remit",
-    "notes": "SaaS collab, was paused - verify"
+    "notes": "SaaS collab, was paused - verify",
+    "desc": "Collaboration SaaS suite (kintone, Garoon, Office) — test on dev env only."
   },
   {
     "name": "Bright Data",
@@ -173,7 +188,8 @@
     "contact": "security@brightdata.com",
     "rewards": "To300/1000/2000 USD tiers",
     "safe": "Discretionary",
-    "notes": "Data SaaS, RECOMMENDED"
+    "notes": "Data SaaS, RECOMMENDED",
+    "desc": "Proxy-network and web-data-collection SaaS platform."
   },
   {
     "name": "Optimoz",
@@ -184,7 +200,8 @@
     "contact": "report page",
     "rewards": "Impact-based",
     "safe": "Cross-org = critical",
-    "notes": "AI SaaS"
+    "notes": "AI SaaS",
+    "desc": "AI marketing-tool SaaS suite (multiple web properties)."
   },
   {
     "name": "GitKraken",
@@ -195,7 +212,8 @@
     "contact": "report page",
     "rewards": "USD wire VRT-based",
     "safe": "No customer impact",
-    "notes": "Dev SaaS"
+    "notes": "Dev SaaS",
+    "desc": "Git client and dev-collaboration desktop/web tools."
   },
   {
     "name": "InterWorx",
@@ -206,7 +224,8 @@
     "contact": "bugbounty@liquidweb.com",
     "rewards": "Discretionary, 30d respond 90d fix",
     "safe": "3rd-party WP/Discourse out unless leakage",
-    "notes": "Hosting SaaS"
+    "notes": "Hosting SaaS",
+    "desc": "Web-hosting control-panel software and portal."
   },
   {
     "name": "Pokee.ai",
@@ -217,7 +236,8 @@
     "contact": "support@pokee.ai Subject Bug Bounty",
     "rewards": "Impact-based (minor ~100)",
     "safe": "No DoS/social/auto w/o PoC",
-    "notes": "AI SaaS small"
+    "notes": "AI SaaS small",
+    "desc": "AI agent/automation SaaS platform with APIs and billing flows."
   },
   {
     "name": "MSPBots.ai",
@@ -228,7 +248,8 @@
     "contact": "support@mspbots.ai",
     "rewards": "Low50 Med100 High150 Crit200-300",
     "safe": "Good-faith authorized, 3-5d ack",
-    "notes": "MSP SaaS IDOR goldmine"
+    "notes": "MSP SaaS IDOR goldmine",
+    "desc": "MSP automation/analytics SaaS — multi-tenant, IDOR-prone."
   },
   {
     "name": "TextMaster",
@@ -239,7 +260,8 @@
     "contact": "GitHub SECURITY",
     "rewards": "CVSS 1-10 = 100-5000 (10=5000)",
     "safe": "Core vs Non-core env",
-    "notes": "Translation SaaS"
+    "notes": "Translation SaaS",
+    "desc": "Translation and content-writing SaaS (web app + API)."
   },
   {
     "name": "Birdeye.so",
@@ -250,7 +272,8 @@
     "contact": "dev@birdeye.so",
     "rewards": "Crit5000+ Low100-500",
     "safe": "24h ack",
-    "notes": "Review SaaS"
+    "notes": "Review SaaS",
+    "desc": "Market-data SaaS platform with website + public APIs."
   },
   {
     "name": "Post Affiliate Pro",
@@ -261,7 +284,8 @@
     "contact": "support@postaffiliatepro.com",
     "rewards": "100 USD fixed",
     "safe": "Same family as LiveAgent",
-    "notes": "Affiliate SaaS"
+    "notes": "Affiliate SaaS",
+    "desc": "Affiliate-tracking and management SaaS."
   },
   {
     "name": "Dashverse",
@@ -272,7 +296,8 @@
     "contact": "report page",
     "rewards": "Low50 Med100 High300 Crit600 30d pay",
     "safe": "CVSS3",
-    "notes": "AI entertainment SaaS"
+    "notes": "AI entertainment SaaS",
+    "desc": "AI entertainment SaaS (Dashtoon comics, short-video apps)."
   },
   {
     "name": "Beggi Beggi",
@@ -283,6 +308,7 @@
     "contact": "bounty@beggibeggi.com",
     "rewards": "Min 100 USD bank/standard",
     "safe": "No other data/disrupt/illegal, security.txt",
-    "notes": "Obscure small"
+    "notes": "Obscure small",
+    "desc": "Small consumer web SaaS/platform with direct email reporting."
   }
 ]

@@ -25,6 +25,7 @@ input{flex:2;min-width:220px}select{flex:1;min-width:160px}
 .b.c{color:#7dd3fc;border-color:#155e75}.b.t{color:#c4b5fd;border-color:#5b21b6}
 .row{font-size:13px;color:var(--mut);line-height:1.5}.row b{color:var(--txt);font-weight:600}
 .reward{color:var(--good);font-size:13px}
+.desc{font-size:13.5px;color:var(--txt);opacity:.92;line-height:1.5}
 .btn{margin-top:auto;display:inline-block;text-align:center;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121a;font-weight:700;border-radius:10px;padding:9px;text-decoration:none;font-size:14px}
 footer{margin:26px 0;color:var(--mut);font-size:13px;text-align:center}
 code{background:#0e1626;padding:2px 6px;border-radius:6px}
@@ -70,13 +71,14 @@ function render(){
   const list=DATA.filter(p=>{
     if(tt&&p.type!==tt)return false;
     if(cc&&p.country!==cc)return false;
-    if(term&&![p.name,p.country,p.type,p.scope,p.rewards,p.notes,p.contact].join(' ').toLowerCase().includes(term))return false;
+    if(term&&![p.name,p.desc,p.country,p.type,p.scope,p.rewards,p.notes,p.contact].join(' ').toLowerCase().includes(term))return false;
     return true;
   });
   grid.innerHTML=list.map(p=>`
   <div class="card">
     <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">🔗 ${esc(p.name)}</a></h3>
     <div class="badges"><span class="b c">${esc(p.country)}</span><span class="b t">${esc(p.type)}</span></div>
+    <div class="desc">${esc(p.desc)}</div>
     <div class="reward">💰 ${esc(p.rewards)}</div>
     <div class="row"><b>Scope:</b> ${esc(p.scope)}</div>
     <div class="row"><b>Report:</b> ${esc(p.contact)}</div>
