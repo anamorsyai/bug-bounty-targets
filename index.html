@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Bounty Targets — obscure SaaS + self-hosted</title>
+<style>
+:root{--bg:#0b0f17;--card:#131a26;--border:#223;--txt:#e8edf5;--mut:#93a0b8;--acc:#22d3ee;--acc2:#a78bfa;--good:#34d399}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:24px;max-width:1200px;margin:auto}
+header{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between;margin-bottom:18px}
+h1{font-size:28px}h1 span{color:var(--acc)}
+.sub{color:var(--mut);margin-top:6px;font-size:14px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 16px;font-size:13px;color:var(--mut)}
+.stat b{display:block;font-size:20px;color:var(--txt)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5}
+input,select{background:var(--card);border:1px solid var(--border);color:var(--txt);border-radius:10px;padding:10px 12px;font-size:14px}
+input{flex:2;min-width:220px}select{flex:1;min-width:160px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.card h3{font-size:17px}.card h3 a{color:var(--txt);text-decoration:none}.card h3 a:hover{color:var(--acc)}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.b{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);color:var(--mut)}
+.b.c{color:#7dd3fc;border-color:#155e75}.b.t{color:#c4b5fd;border-color:#5b21b6}
+.row{font-size:13px;color:var(--mut);line-height:1.5}.row b{color:var(--txt);font-weight:600}
+.reward{color:var(--good);font-size:13px}
+.btn{margin-top:auto;display:inline-block;text-align:center;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121a;font-weight:700;border-radius:10px;padding:9px;text-decoration:none;font-size:14px}
+footer{margin:26px 0;color:var(--mut);font-size:13px;text-align:center}
+code{background:#0e1626;padding:2px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<header>
+<div>
+<h1>🎯 Bug Bounty <span>Targets</span></h1>
+<div class="sub">Obscure + self-hosted + small SaaS from many countries. Low crowd, real payouts. Edit <code>programs.json</code> to add more.</div>
+</div>
+<div class="stats">
+<div class="stat"><b id="sTotal">–</b>programs</div>
+<div class="stat"><b id="sCountries">–</b>countries</div>
+<div class="stat"><b id="sSelf">–</b>self-hosted</div>
+</div>
+</header>
+<div class="bar">
+<input id="q" placeholder="Search name, scope, reward, country… (e.g. SaaS, €, *.telekom.de)">
+<select id="fType"><option value="">All types</option></select>
+<select id="fCountry"><option value="">All countries</option></select>
+</div>
+<div class="grid" id="grid"></div>
+<footer>Built for hunters • To add a program just append an object to <code>programs.json</code> • Always respect scope + safe harbor.</footer>
+<script>
+let DATA=[];
+const grid=document.getElementById('grid'),q=document.getElementById('q'),fT=document.getElementById('fType'),fC=document.getElementById('fCountry');
+fetch('programs.json').then(r=>r.json()).then(d=>{DATA=d;init();});
+function init(){
+  const types=[...new Set(DATA.map(x=>x.type).filter(Boolean))].sort();
+  const countries=[...new Set(DATA.map(x=>x.country).filter(Boolean))].sort();
+  types.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;fT.appendChild(o);});
+  countries.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;fC.appendChild(o);});
+  document.getElementById('sTotal').textContent=DATA.length;
+  document.getElementById('sCountries').textContent=countries.length;
+  document.getElementById('sSelf').textContent=DATA.filter(x=>(x.type||'').includes('self')).length;
+  render();
+  q.addEventListener('input',render);fT.addEventListener('change',render);fC.addEventListener('change',render);
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function render(){
+  const term=q.value.toLowerCase(),tt=fT.value,cc=fC.value;
+  const list=DATA.filter(p=>{
+    if(tt&&p.type!==tt)return false;
+    if(cc&&p.country!==cc)return false;
+    if(term&&![p.name,p.country,p.type,p.scope,p.rewards,p.notes,p.contact].join(' ').toLowerCase().includes(term))return false;
+    return true;
+  });
+  grid.innerHTML=list.map(p=>`
+  <div class="card">
+    <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">🔗 ${esc(p.name)}</a></h3>
+    <div class="badges"><span class="b c">${esc(p.country)}</span><span class="b t">${esc(p.type)}</span></div>
+    <div class="reward">💰 ${esc(p.rewards)}</div>
+    <div class="row"><b>Scope:</b> ${esc(p.scope)}</div>
+    <div class="row"><b>Report:</b> ${esc(p.contact)}</div>
+    <div class="row"><b>Rules:</b> ${esc(p.safe)}</div>
+    <div class="row">📝 ${esc(p.notes)}</div>
+    <a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener">Open program</a>
+  </div>`).join('')||'<p style="color:var(--mut)">No matches. Try another keyword.</p>';
+}
+</script>
+</body>
+</html>
