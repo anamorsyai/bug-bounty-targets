@@ -144,6 +144,38 @@
     "rank": 9
   },
   {
+    "name": "Monosnap",
+    "country": "Global",
+    "type": "self-hosted bounty",
+    "url": "https://monosnap.zendesk.com/hc/en-us/articles/4921292536850-Bug-Bounty-Program-Terms-and-Conditions",
+    "scope": "Monosnap services (screenshot SaaS)",
+    "contact": "security@monosnap.com (full description + exploitability + PoC required)",
+    "rewards": "Critical 400 / High 200 / Medium 100 / Low 25 USD, first reporter only",
+    "safe": "Final binding decisions, prompt response varies by complexity",
+    "notes": "Screenshot SaaS like CleanShot, clear tier table",
+    "desc": "Screenshot-capture SaaS with cloud sharing.",
+    "added": 58,
+    "difficulty": "easy",
+    "scopeSize": "medium",
+    "rank": 10
+  },
+  {
+    "name": "Venice.ai",
+    "country": "USA",
+    "type": "self-hosted bounty",
+    "url": "https://venice.ai/bug-bounty",
+    "scope": "venice.ai + api.venice.ai + Android/iOS apps (smart contracts also in scope)",
+    "contact": "secure reporting form on page (no direct email)",
+    "rewards": "Low 200+ / Medium 750+ / High 2500+ / Critical case-by-case, USDC/VVV crypto",
+    "safe": "Video/screenshot PoC required, no scanner output, validated AI reports ok",
+    "notes": "Private AI-chat SaaS, billing flows in scope, crypto payout",
+    "desc": "Private AI-chat SaaS with API, apps and billing flows.",
+    "added": 59,
+    "difficulty": "easy",
+    "scopeSize": "medium",
+    "rank": 11
+  },
+  {
     "name": "Shoper",
     "country": "Poland",
     "type": "self-hosted bounty",
@@ -157,7 +189,7 @@
     "added": 34,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 10
+    "rank": 12
   },
   {
     "name": "FlexiFunnels",
@@ -173,7 +205,7 @@
     "added": 42,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 11
+    "rank": 13
   },
   {
     "name": "SkyDeck.ai",
@@ -186,7 +218,7 @@
     "safe": "Detailed repro + impact + mitigation required",
     "notes": "Tiny French AI startup, XSS/CSRF/SSRF/IDOR scope",
     "desc": "Small French AI-platform SaaS (control center + studio tools).",
-    "rank": 12,
+    "rank": 14,
     "added": 44
   },
   {
@@ -200,7 +232,7 @@
     "safe": "No spammy follow-ups, responsible disclosure",
     "notes": "Small busy dev team, creative/critical pays more",
     "desc": "Email-marketing SaaS with direct bounty inbox.",
-    "rank": 13,
+    "rank": 15,
     "added": 45
   },
   {
@@ -214,7 +246,7 @@
     "safe": "Full safe harbor incl. CFAA authorization, 90-day disclosure, own-data PoC only",
     "notes": "Data-platform SaaS, excellent written policy, 14d ack",
     "desc": "Data-integration platform SaaS with multi-region connections.",
-    "rank": 14,
+    "rank": 16,
     "added": 46
   },
   {
@@ -228,7 +260,7 @@
     "safe": "Privately managed by Hivenet Security, PGP on request",
     "notes": "Cloud storage/compute SaaS, CVSS-scored tiers",
     "desc": "Distributed-cloud storage/compute SaaS.",
-    "rank": 15,
+    "rank": 17,
     "added": 47
   },
   {
@@ -242,7 +274,7 @@
     "safe": "Exact GitHub line number required, no spam/status nagging",
     "notes": "Bootstrapped Capacitor-updates SaaS, must verify fix post-release",
     "desc": "Over-the-air app-updates SaaS for Capacitor apps.",
-    "rank": 16,
+    "rank": 18,
     "added": 48
   },
   {
@@ -256,7 +288,7 @@
     "safe": "First reporter, discretionary tiers",
     "notes": "Obscure hosting/platform SaaS",
     "desc": "Small hosting/platform SaaS with panel scope.",
-    "rank": 17,
+    "rank": 19,
     "added": 49
   },
   {
@@ -270,7 +302,7 @@
     "safe": "18+, no ex-employees, 5d response 10d triage 30d payout post-fix",
     "notes": "IoT+app SaaS, web/API testable without device",
     "desc": "Smart-sensor SaaS with web app, API and mobile apps.",
-    "rank": 18,
+    "rank": 20,
     "added": 50
   },
   {
@@ -285,7 +317,7 @@
     "notes": "Hosting SaaS Africa, 2d ack 10d triage 21d pay, honest small-team policy",
     "desc": "African hosting SaaS with panel, API and free test accounts.",
     "added": 51,
-    "rank": 19,
+    "rank": 21,
     "difficulty": "medium",
     "scopeSize": "wide"
   },
@@ -301,7 +333,7 @@
     "notes": "Identity SaaS - auth bugs goldmine",
     "desc": "Customer-identity (CIAM) SaaS platform.",
     "added": 52,
-    "rank": 20,
+    "rank": 22,
     "difficulty": "medium",
     "scopeSize": "medium"
   },
@@ -317,7 +349,7 @@
     "notes": "SharePoint-forms SaaS, use-case required in report",
     "desc": "SharePoint forms/documents SaaS for businesses.",
     "added": 53,
-    "rank": 21,
+    "rank": 23,
     "difficulty": "easy",
     "scopeSize": "medium"
   },
@@ -333,7 +365,7 @@
     "notes": "Parcel-locker SaaS NL, precise tier table",
     "desc": "Parcel-locker logistics SaaS (Netherlands).",
     "added": 54,
-    "rank": 22,
+    "rank": 24,
     "difficulty": "easy",
     "scopeSize": "narrow"
   },
@@ -349,7 +381,7 @@
     "notes": "Hosting SaaS FR, fix goal 10d post-triage",
     "desc": "French hosting SaaS with panel, mail and API scope.",
     "added": 55,
-    "rank": 23,
+    "rank": 25,
     "difficulty": "medium",
     "scopeSize": "medium"
   },
@@ -365,7 +397,7 @@
     "notes": "Trust/security-review SaaS incl. MCP endpoint",
     "desc": "Vendor-trust review SaaS with app, API and MCP surface.",
     "added": 56,
-    "rank": 24,
+    "rank": 26,
     "difficulty": "medium",
     "scopeSize": "narrow"
   },
@@ -381,7 +413,7 @@
     "notes": "Compliance SaaS NG, pays then publishes, argues allowed",
     "desc": "Compliance-registers SaaS (Nigeria) with API and connectors.",
     "added": 57,
-    "rank": 25,
+    "rank": 27,
     "difficulty": "easy",
     "scopeSize": "medium"
   },
@@ -399,7 +431,7 @@
     "added": 10,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 26
+    "rank": 28
   },
   {
     "name": "hCaptcha",
@@ -415,7 +447,7 @@
     "added": 37,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 27
+    "rank": 29
   },
   {
     "name": "ReadMe",
@@ -431,7 +463,7 @@
     "added": 38,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 28
+    "rank": 30
   },
   {
     "name": "Fastmail",
@@ -447,7 +479,7 @@
     "added": 27,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 29
+    "rank": 31
   },
   {
     "name": "Athento",
@@ -463,7 +495,7 @@
     "added": 28,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 30
+    "rank": 32
   },
   {
     "name": "Bright Data",
@@ -479,7 +511,7 @@
     "added": 16,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 31
+    "rank": 33
   },
   {
     "name": "Zoho",
@@ -495,7 +527,7 @@
     "added": 13,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 32
+    "rank": 34
   },
   {
     "name": "ClickPost",
@@ -511,7 +543,7 @@
     "added": 14,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 33
+    "rank": 35
   },
   {
     "name": "Wildix",
@@ -527,7 +559,7 @@
     "added": 30,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 34
+    "rank": 36
   },
   {
     "name": "Missive",
@@ -543,7 +575,7 @@
     "added": 29,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 35
+    "rank": 37
   },
   {
     "name": "Zenarmor",
@@ -559,7 +591,7 @@
     "added": 32,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 36
+    "rank": 38
   },
   {
     "name": "CodeRabbit",
@@ -575,7 +607,7 @@
     "added": 1,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 37
+    "rank": 39
   },
   {
     "name": "Ably",
@@ -591,7 +623,7 @@
     "added": 3,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 38
+    "rank": 40
   },
   {
     "name": "Atmail",
@@ -607,7 +639,7 @@
     "added": 4,
     "difficulty": "easy",
     "scopeSize": "wide",
-    "rank": 39
+    "rank": 41
   },
   {
     "name": "CleanShot",
@@ -623,7 +655,7 @@
     "added": 5,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 40
+    "rank": 42
   },
   {
     "name": "Glia",
@@ -639,7 +671,7 @@
     "added": 6,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 41
+    "rank": 43
   },
   {
     "name": "Socket",
@@ -655,7 +687,7 @@
     "added": 7,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 42
+    "rank": 44
   },
   {
     "name": "Kontent.ai",
@@ -671,7 +703,7 @@
     "added": 8,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 43
+    "rank": 45
   },
   {
     "name": "Simbase",
@@ -687,7 +719,7 @@
     "added": 9,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 44
+    "rank": 46
   },
   {
     "name": "GitKraken",
@@ -703,7 +735,7 @@
     "added": 18,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 45
+    "rank": 47
   },
   {
     "name": "InterWorx",
@@ -719,7 +751,7 @@
     "added": 19,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 46
+    "rank": 48
   },
   {
     "name": "Optimoz",
@@ -735,7 +767,7 @@
     "added": 17,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 47
+    "rank": 49
   },
   {
     "name": "Birdeye.so",
@@ -751,7 +783,7 @@
     "added": 23,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 48
+    "rank": 50
   },
   {
     "name": "Pokee.ai",
@@ -767,7 +799,7 @@
     "added": 20,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 49
+    "rank": 51
   },
   {
     "name": "Dashverse",
@@ -783,7 +815,7 @@
     "added": 25,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 50
+    "rank": 52
   },
   {
     "name": "Beggi Beggi",
@@ -799,7 +831,7 @@
     "added": 26,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 51
+    "rank": 53
   },
   {
     "name": "Cybozu",
@@ -815,7 +847,7 @@
     "added": 15,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 52
+    "rank": 54
   },
   {
     "name": "Genians",
@@ -831,7 +863,7 @@
     "added": 39,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 53
+    "rank": 55
   },
   {
     "name": "HSPACE",
@@ -847,7 +879,7 @@
     "added": 40,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 54
+    "rank": 56
   },
   {
     "name": "Fusiora",
@@ -863,7 +895,7 @@
     "added": 35,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 55
+    "rank": 57
   },
   {
     "name": "Paheko",
@@ -879,7 +911,7 @@
     "added": 36,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 56
+    "rank": 58
   },
   {
     "name": "Range (docs.range.org)",
@@ -895,6 +927,6 @@
     "added": 2,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 57
+    "rank": 59
   }
 ]
