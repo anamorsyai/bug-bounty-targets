@@ -9,7 +9,10 @@
     "rewards": "To 20000 (Crit 20k High 5k Med 1k Low 500)",
     "safe": "Full safe harbor",
     "notes": "Low crowd, high pay",
-    "desc": "AI code-review bot that scans pull requests for bugs and security issues."
+    "desc": "AI code-review bot that scans pull requests for bugs and security issues.",
+    "added": 1,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Range (docs.range.org)",
@@ -21,7 +24,10 @@
     "rewards": "To 10000",
     "safe": "Full",
     "notes": "Obscure",
-    "desc": "Web platform + APIs with auth flows and user data handling."
+    "desc": "Web platform + APIs with auth flows and user data handling.",
+    "added": 2,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Ably",
@@ -33,7 +39,10 @@
     "rewards": "To 5000",
     "safe": "Full, AI-only reports rejected",
     "notes": "Realtime SaaS",
-    "desc": "Realtime messaging API platform (pub/sub, WebSockets) for apps."
+    "desc": "Realtime messaging API platform (pub/sub, WebSockets) for apps.",
+    "added": 3,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Atmail",
@@ -45,7 +54,10 @@
     "rewards": "To 5000",
     "safe": "Full",
     "notes": "Email SaaS",
-    "desc": "Email hosting software and cloud email services for businesses."
+    "desc": "Email hosting software and cloud email services for businesses.",
+    "added": 4,
+    "difficulty": "easy",
+    "scopeSize": "wide"
   },
   {
     "name": "CleanShot",
@@ -57,7 +69,10 @@
     "rewards": "50-4000",
     "safe": "Self policy",
     "notes": "Mac + Cloud",
-    "desc": "Screenshot/recording tool for Mac plus cloud link-sharing service."
+    "desc": "Screenshot/recording tool for Mac plus cloud link-sharing service.",
+    "added": 5,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Glia",
@@ -69,7 +84,10 @@
     "rewards": "200+ USD min",
     "safe": "Full",
     "notes": "Low crowd",
-    "desc": "Customer-interaction SaaS (chat, voice, video support) for enterprises."
+    "desc": "Customer-interaction SaaS (chat, voice, video support) for enterprises.",
+    "added": 6,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Socket",
@@ -81,7 +99,10 @@
     "rewards": "50+ USD min",
     "safe": "Full",
     "notes": "Supply-chain SaaS",
-    "desc": "Supply-chain security scanner that flags risky open-source packages."
+    "desc": "Supply-chain security scanner that flags risky open-source packages.",
+    "added": 7,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Kontent.ai",
@@ -93,7 +114,10 @@
     "rewards": "200",
     "safe": "Full",
     "notes": "Headless CMS SaaS",
-    "desc": "Headless CMS SaaS for managing and delivering content via API."
+    "desc": "Headless CMS SaaS for managing and delivering content via API.",
+    "added": 8,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "Simbase",
@@ -105,7 +129,10 @@
     "rewards": "200",
     "safe": "Full",
     "notes": "IoT SIM SaaS",
-    "desc": "IoT SIM connectivity-management SaaS platform."
+    "desc": "IoT SIM connectivity-management SaaS platform.",
+    "added": 9,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "Floy",
@@ -117,7 +144,10 @@
     "rewards": "Low275 Med675 High1200 Crit1800 Exc2500 EUR",
     "safe": "No DoS/heavy auto, 7d reply",
     "notes": "Since Jan2025, STORED",
-    "desc": "Medical-AI SaaS for radiology screening (Germany)."
+    "desc": "Medical-AI SaaS for radiology screening (Germany).",
+    "added": 10,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "LiveAgent",
@@ -129,7 +159,10 @@
     "rewards": "100 USD PayPal+invoice 30d first-only",
     "safe": "90d fix, no delete/DDoS/social",
     "notes": "Helpdesk SaaS, STORED",
-    "desc": "Helpdesk + live-chat SaaS with trial accounts (*.ladesk.com)."
+    "desc": "Helpdesk + live-chat SaaS with trial accounts (*.ladesk.com).",
+    "added": 11,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "FlowHunt",
@@ -141,7 +174,10 @@
     "rewards": "Crit100 Med50 PayPal",
     "safe": "90d",
     "notes": "LiveAgent clone SaaS",
-    "desc": "AI chatbot/workflow-builder SaaS (same family as LiveAgent)."
+    "desc": "AI chatbot/workflow-builder SaaS (same family as LiveAgent).",
+    "added": 12,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Zoho",
@@ -153,7 +189,10 @@
     "rewards": "Low50 Med200 High800 Crit3000 USD (INR wire/PayPal/gift, 10% TDS IN)",
     "safe": "3d validate",
     "notes": "Huge SaaS suite, RECOMMENDED",
-    "desc": "Huge business-app suite SaaS (CRM, ManageEngine, Site24x7 and more)."
+    "desc": "Huge business-app suite SaaS (CRM, ManageEngine, Site24x7 and more).",
+    "added": 13,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "ClickPost",
@@ -165,7 +204,10 @@
     "rewards": "INR1500-14000",
     "safe": "No Nmap/SSL auto scan",
     "notes": "Logistics SaaS",
-    "desc": "Logistics/shipping-management SaaS (India)."
+    "desc": "Logistics/shipping-management SaaS (India).",
+    "added": 14,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Cybozu",
@@ -177,7 +219,10 @@
     "rewards": "RCE2M JPY SQLi400k-1.6M XSS100-400k",
     "safe": "JP/EN, no prod test, bank remit",
     "notes": "SaaS collab, was paused - verify",
-    "desc": "Collaboration SaaS suite (kintone, Garoon, Office) — test on dev env only."
+    "desc": "Collaboration SaaS suite (kintone, Garoon, Office) — test on dev env only.",
+    "added": 15,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Bright Data",
@@ -189,7 +234,10 @@
     "rewards": "To300/1000/2000 USD tiers",
     "safe": "Discretionary",
     "notes": "Data SaaS, RECOMMENDED",
-    "desc": "Proxy-network and web-data-collection SaaS platform."
+    "desc": "Proxy-network and web-data-collection SaaS platform.",
+    "added": 16,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Optimoz",
@@ -201,7 +249,10 @@
     "rewards": "Impact-based",
     "safe": "Cross-org = critical",
     "notes": "AI SaaS",
-    "desc": "AI marketing-tool SaaS suite (multiple web properties)."
+    "desc": "AI marketing-tool SaaS suite (multiple web properties).",
+    "added": 17,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "GitKraken",
@@ -213,7 +264,10 @@
     "rewards": "USD wire VRT-based",
     "safe": "No customer impact",
     "notes": "Dev SaaS",
-    "desc": "Git client and dev-collaboration desktop/web tools."
+    "desc": "Git client and dev-collaboration desktop/web tools.",
+    "added": 18,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "InterWorx",
@@ -225,7 +279,10 @@
     "rewards": "Discretionary, 30d respond 90d fix",
     "safe": "3rd-party WP/Discourse out unless leakage",
     "notes": "Hosting SaaS",
-    "desc": "Web-hosting control-panel software and portal."
+    "desc": "Web-hosting control-panel software and portal.",
+    "added": 19,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Pokee.ai",
@@ -237,7 +294,10 @@
     "rewards": "Impact-based (minor ~100)",
     "safe": "No DoS/social/auto w/o PoC",
     "notes": "AI SaaS small",
-    "desc": "AI agent/automation SaaS platform with APIs and billing flows."
+    "desc": "AI agent/automation SaaS platform with APIs and billing flows.",
+    "added": 20,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "MSPBots.ai",
@@ -249,7 +309,10 @@
     "rewards": "Low50 Med100 High150 Crit200-300",
     "safe": "Good-faith authorized, 3-5d ack",
     "notes": "MSP SaaS IDOR goldmine",
-    "desc": "MSP automation/analytics SaaS — multi-tenant, IDOR-prone."
+    "desc": "MSP automation/analytics SaaS — multi-tenant, IDOR-prone.",
+    "added": 21,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "TextMaster",
@@ -261,7 +324,10 @@
     "rewards": "CVSS 1-10 = 100-5000 (10=5000)",
     "safe": "Core vs Non-core env",
     "notes": "Translation SaaS",
-    "desc": "Translation and content-writing SaaS (web app + API)."
+    "desc": "Translation and content-writing SaaS (web app + API).",
+    "added": 22,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Birdeye.so",
@@ -273,7 +339,10 @@
     "rewards": "Crit5000+ Low100-500",
     "safe": "24h ack",
     "notes": "Review SaaS",
-    "desc": "Market-data SaaS platform with website + public APIs."
+    "desc": "Market-data SaaS platform with website + public APIs.",
+    "added": 23,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Post Affiliate Pro",
@@ -285,7 +354,10 @@
     "rewards": "100 USD fixed",
     "safe": "Same family as LiveAgent",
     "notes": "Affiliate SaaS",
-    "desc": "Affiliate-tracking and management SaaS."
+    "desc": "Affiliate-tracking and management SaaS.",
+    "added": 24,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Dashverse",
@@ -297,7 +369,10 @@
     "rewards": "Low50 Med100 High300 Crit600 30d pay",
     "safe": "CVSS3",
     "notes": "AI entertainment SaaS",
-    "desc": "AI entertainment SaaS (Dashtoon comics, short-video apps)."
+    "desc": "AI entertainment SaaS (Dashtoon comics, short-video apps).",
+    "added": 25,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "Beggi Beggi",
@@ -309,7 +384,10 @@
     "rewards": "Min 100 USD bank/standard",
     "safe": "No other data/disrupt/illegal, security.txt",
     "notes": "Obscure small",
-    "desc": "Small consumer web SaaS/platform with direct email reporting."
+    "desc": "Small consumer web SaaS/platform with direct email reporting.",
+    "added": 26,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "Fastmail",
@@ -321,7 +399,10 @@
     "rewards": "Min 100 to Max 5000 USD via PayPal, monthly",
     "safe": "Test account only, no other users data, reasonable fix time before public",
     "notes": "Email SaaS, senior staff triage up to 10 days",
-    "desc": "Email-hosting SaaS (plus Topicbox/Pobox) with trial accounts."
+    "desc": "Email-hosting SaaS (plus Topicbox/Pobox) with trial accounts.",
+    "added": 27,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "Athento",
@@ -333,7 +414,10 @@
     "rewards": "Small 30 / High 200 / Critical 600 / tiny 20 EUR via PayPal + invoice",
     "safe": "Same email for report+payment, one bug once until fix announced",
     "notes": "Document-management SaaS, publishes fixed-bugs list",
-    "desc": "Document-management SaaS (Spanish, obscure) with public fixed list."
+    "desc": "Document-management SaaS (Spanish, obscure) with public fixed list.",
+    "added": 28,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Missive",
@@ -345,7 +429,10 @@
     "rewards": "Discretionary by criticality",
     "safe": "No public disclosure before fix",
     "notes": "Email-collaboration SaaS",
-    "desc": "Team-email collaboration SaaS."
+    "desc": "Team-email collaboration SaaS.",
+    "added": 29,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Wildix",
@@ -357,7 +444,10 @@
     "rewards": "Min 50 to Max 5000 USD (OWASP Risk Rating)",
     "safe": "First reporter only, no prior public disclosure",
     "notes": "UCaaS/VoIP SaaS, RCE/auth-bypass top pay",
-    "desc": "Cloud PBX/UCaaS SaaS (calls, video, chat)."
+    "desc": "Cloud PBX/UCaaS SaaS (calls, video, chat).",
+    "added": 30,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "ClickTime",
@@ -369,7 +459,10 @@
     "rewards": "High 100 / Medium-Low 25 USD, Critical varies",
     "safe": "Attack scenario + real user risk required, sanctions countries excluded",
     "notes": "Time-tracking SaaS, reflected XSS/open-redirect not paid",
-    "desc": "Time-tracking and expenses SaaS."
+    "desc": "Time-tracking and expenses SaaS.",
+    "added": 31,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "Zenarmor",
@@ -381,7 +474,10 @@
     "rewards": "Flexible, severity-based via PayPal after fix",
     "safe": "Only outsider-to-other-user data flaws count",
     "notes": "Network-security SaaS, no fixed min/max",
-    "desc": "Firewall/network-security SaaS with cloud dashboard."
+    "desc": "Firewall/network-security SaaS with cloud dashboard.",
+    "added": 32,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Survicate",
@@ -393,7 +489,10 @@
     "rewards": "PayPal only (tiers in policy), Polish law",
     "safe": "Listed hosts only, 3rd-party integrations excluded",
     "notes": "Survey SaaS Warsaw, precise scope list",
-    "desc": "Survey/feedback SaaS with SDKs and export API."
+    "desc": "Survey/feedback SaaS with SDKs and export API.",
+    "added": 33,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Shoper",
@@ -405,7 +504,10 @@
     "rewards": "Min 200 zl (~50 USD), no maximum",
     "safe": "First white-hat reporter only, step-by-step repro + accounts/shops names",
     "notes": "E-commerce SaaS Poland, XSS/CSRF/SQLi/RCE scope",
-    "desc": "E-commerce shop SaaS (Polish) with free trial stores."
+    "desc": "E-commerce shop SaaS (Polish) with free trial stores.",
+    "added": 34,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Fusiora",
@@ -417,7 +519,10 @@
     "rewards": "Paid within 2 business days to bonus balance",
     "safe": "No DoS/bruteforce, no scanner-only, no 3rd-party",
     "notes": "VPS/cloud SaaS Tallinn, fastest payout here",
-    "desc": "VPS/cloud-provisioning SaaS with billing logic."
+    "desc": "VPS/cloud-provisioning SaaS with billing logic.",
+    "added": 35,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Paheko",
@@ -429,7 +534,10 @@
     "rewards": "Max ~500-2000 EUR critical (RCE/cross-org download), tiny budget stated",
     "safe": "Coordinated, open-source project",
     "notes": "Nonprofit-management SaaS, honest 150k budget note",
-    "desc": "Nonprofit-management open-source SaaS (Paheko.cloud)."
+    "desc": "Nonprofit-management open-source SaaS (Paheko.cloud).",
+    "added": 36,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "hCaptcha",
@@ -441,7 +549,10 @@
     "rewards": "Small to 100 / Medium-Large-Critical 100-1000 USD via PayPal (charity option)",
     "safe": "No GitHub Issues/public forum reports, user-data confidentiality",
     "notes": "Bot-protection SaaS, found via GitHub bounties repo",
-    "desc": "Bot-protection SaaS (CAPTCHA alternative) with dashboard + SDKs."
+    "desc": "Bot-protection SaaS (CAPTCHA alternative) with dashboard + SDKs.",
+    "added": 37,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "ReadMe",
@@ -453,7 +564,10 @@
     "rewards": "Low 250 / Medium 500 / High 1000 / Critical 3000 USD",
     "safe": "Free trial only, no main-site/customer-site testing w/o consent",
     "notes": "API-docs SaaS, trial extendable via email",
-    "desc": "API-documentation SaaS (hosts developer docs sites)."
+    "desc": "API-documentation SaaS (hosts developer docs sites).",
+    "added": 38,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Genians",
@@ -465,7 +579,10 @@
     "rewards": "Low 240k-480k / Med 720k-1800k / High 2.5M-3.6M / Crit 5.4M-9M KRW (USD for foreigners)",
     "safe": "Dedicated bounty signup required, scope-only, monthly committee",
     "notes": "NAC security SaaS, bank transfer, patch-month+1 payout",
-    "desc": "Network-access-control SaaS with cloud console and APIs."
+    "desc": "Network-access-control SaaS with cloud console and APIs.",
+    "added": 39,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "HSPACE",
@@ -477,7 +594,10 @@
     "rewards": "Low 50k-100k / Med 100k-300k / High 300k-800k / Crit 800k-2M KRW, paid 25th monthly",
     "safe": "Scope-only, no disclosure before patch, delete accessed data",
     "notes": "Obscure KR SaaS, Markdown/PDF/Word PoC accepted",
-    "desc": "Obscure Korean SaaS with sub-path + API scope."
+    "desc": "Obscure Korean SaaS with sub-path + API scope.",
+    "added": 40,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Smackdab.ai",
@@ -489,7 +609,10 @@
     "rewards": "Critical 100-300 / High 50-150 / Med 25-75 / Low 0-25 USD via PayPal, max 300",
     "safe": "Pre-launch startup, CVSS3.1 + business context, one issue per email",
     "notes": "Legal-AI SaaS pre-launch = low-hanging fruit",
-    "desc": "Legal-AI SaaS (pre-launch startup) with web app, APIs and mobile apps."
+    "desc": "Legal-AI SaaS (pre-launch startup) with web app, APIs and mobile apps.",
+    "added": 41,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "FlexiFunnels",
@@ -501,7 +624,10 @@
     "rewards": "Tiers 50 / 100 / 250 / 500 USD by severity",
     "safe": "Good-faith only, one vuln per report, no law violation",
     "notes": "Founder-direct email, IDOR/SQLi/RCE/SSRF scope",
-    "desc": "Funnel-builder SaaS with direct founder reporting email."
+    "desc": "Funnel-builder SaaS with direct founder reporting email.",
+    "added": 42,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "HypeHost",
@@ -513,6 +639,9 @@
     "rewards": "To R$ 8000 (tiers R$ 3000-8000), paid in 12 business hours via crypto or Pix",
     "safe": "Mark [BUG BOUNTY ALERT] in tickets/forms, stop on customer data exposure, moderate auto tools",
     "notes": "VPS/hosting SaaS Sao Paulo, fastest payout here",
-    "desc": "VPS/hosting SaaS (Brazil) with panel, client area and support scope."
+    "desc": "VPS/hosting SaaS (Brazil) with panel, client area and support scope.",
+    "added": 43,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   }
 ]

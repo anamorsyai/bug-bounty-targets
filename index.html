@@ -23,6 +23,9 @@ input{flex:2;min-width:220px}select{flex:1;min-width:160px}
 .badges{display:flex;gap:6px;flex-wrap:wrap}
 .b{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);color:var(--mut)}
 .b.c{color:#7dd3fc;border-color:#155e75}.b.t{color:#c4b5fd;border-color:#5b21b6}
+.b.de{color:#6ee7b7;border-color:#065f46}.b.dm{color:#fcd34d;border-color:#92400e}
+.b.sw{color:#93c5fd;border-color:#1e40af}.b.sm{color:#d6b4fe;border-color:#6b21a8}.b.sn{color:#f9a8d4;border-color:#9d174d}
+.count{color:var(--mut);font-size:13px;margin:4px 0 0}
 .row{font-size:13px;color:var(--mut);line-height:1.5}.row b{color:var(--txt);font-weight:600}
 .reward{color:var(--good);font-size:13px}
 .desc{font-size:13.5px;color:var(--txt);opacity:.92;line-height:1.5}
@@ -44,15 +47,27 @@ code{background:#0e1626;padding:2px 6px;border-radius:6px}
 </div>
 </header>
 <div class="bar">
-<input id="q" placeholder="Search name, scope, reward, country… (e.g. SaaS, €, *.telekom.de)">
+<input id="q" placeholder="Search name, scope, reward, country… (e.g. SaaS, trial, IDOR)">
 <select id="fType"><option value="">All types</option></select>
 <select id="fCountry"><option value="">All countries</option></select>
+<select id="fDiff"><option value="">All levels</option><option value="easy">🟢 Easy</option><option value="medium">🟡 Medium</option></select>
+<select id="fScope"><option value="">Any scope size</option><option value="wide">📡 Wide scope</option><option value="medium">📶 Medium scope</option><option value="narrow">🎯 Narrow scope</option></select>
+<select id="fSort">
+<option value="added">🕰️ Oldest first</option>
+<option value="addedDesc">🆕 Newest first</option>
+<option value="easy">🟢 Easiest first</option>
+<option value="hard">🟡 Hardest first</option>
+<option value="wide">📡 Widest first</option>
+<option value="narrow">🎯 Narrowest first</option>
+<option value="az">🔤 Name A–Z</option>
+</select>
 </div>
+<div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
 <footer>Built for hunters • To add a program just append an object to <code>programs.json</code> • Always respect scope + safe harbor.</footer>
 <script>
 let DATA=[];
-const grid=document.getElementById('grid'),q=document.getElementById('q'),fT=document.getElementById('fType'),fC=document.getElementById('fCountry');
+const grid=document.getElementById('grid'),q=document.getElementById('q'),fT=document.getElementById('fType'),fC=document.getElementById('fCountry'),fD=document.getElementById('fDiff'),fS=document.getElementById('fScope'),fSort=document.getElementById('fSort'),count=document.getElementById('count');
 fetch('programs.json').then(r=>r.json()).then(d=>{DATA=d;init();});
 function init(){
   const types=[...new Set(DATA.map(x=>x.type).filter(Boolean))].sort();
@@ -63,21 +78,34 @@ function init(){
   document.getElementById('sCountries').textContent=countries.length;
   document.getElementById('sSelf').textContent=DATA.filter(x=>(x.type||'').includes('self')).length;
   render();
-  q.addEventListener('input',render);fT.addEventListener('change',render);fC.addEventListener('change',render);
+  q.addEventListener('input',render);fT.addEventListener('change',render);fC.addEventListener('change',render);fD.addEventListener('change',render);fS.addEventListener('change',render);fSort.addEventListener('change',render);
 }
 function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function render(){
-  const term=q.value.toLowerCase(),tt=fT.value,cc=fC.value;
-  const list=DATA.filter(p=>{
+  const term=q.value.toLowerCase(),tt=fT.value,cc=fC.value,dd=fD.value,ss=fS.value,so=fSort.value;
+  let list=DATA.filter(p=>{
     if(tt&&p.type!==tt)return false;
     if(cc&&p.country!==cc)return false;
+    if(dd&&p.difficulty!==dd)return false;
+    if(ss&&p.scopeSize!==ss)return false;
     if(term&&![p.name,p.desc,p.country,p.type,p.scope,p.rewards,p.notes,p.contact].join(' ').toLowerCase().includes(term))return false;
     return true;
   });
+  const dw={easy:0,medium:1},sw={wide:0,medium:1,narrow:2},swR={narrow:0,medium:1,wide:2};
+  if(so==='addedDesc')list.sort((a,b)=>(b.added||0)-(a.added||0));
+  else if(so==='easy')list.sort((a,b)=>dw[a.difficulty]-dw[b.difficulty]);
+  else if(so==='hard')list.sort((a,b)=>dw[b.difficulty]-dw[a.difficulty]);
+  else if(so==='wide')list.sort((a,b)=>sw[a.scopeSize]-sw[b.scopeSize]);
+  else if(so==='narrow')list.sort((a,b)=>swR[a.scopeSize]-swR[b.scopeSize]);
+  else if(so==='az')list.sort((a,b)=>a.name.localeCompare(b.name));
+  else list.sort((a,b)=>(a.added||0)-(b.added||0));
+  const dBadge=d=>d==='easy'?'de':'dm',sBadge=s=>s==='wide'?'sw':(s==='narrow'?'sn':'sm');
+  const dTxt=d=>d==='easy'?'🟢 easy':'🟡 medium',sTxt=s=>s==='wide'?'📡 wide':(s==='narrow'?'🎯 narrow':'📶 medium');
+  count.textContent=`Showing ${list.length} of ${DATA.length} programs`;
   grid.innerHTML=list.map(p=>`
   <div class="card">
     <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">🔗 ${esc(p.name)}</a></h3>
-    <div class="badges"><span class="b c">${esc(p.country)}</span><span class="b t">${esc(p.type)}</span></div>
+    <div class="badges"><span class="b c">${esc(p.country)}</span><span class="b t">${esc(p.type)}</span><span class="b ${dBadge(p.difficulty)}">${dTxt(p.difficulty)}</span><span class="b ${sBadge(p.scopeSize)}">${sTxt(p.scopeSize)}</span></div>
     <div class="desc">${esc(p.desc)}</div>
     <div class="reward">💰 ${esc(p.rewards)}</div>
     <div class="row"><b>Scope:</b> ${esc(p.scope)}</div>
