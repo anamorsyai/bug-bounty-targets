@@ -434,6 +434,22 @@
     "rank": 28
   },
   {
+    "name": "SyncEzy",
+    "country": "Australia",
+    "type": "self-hosted bounty",
+    "url": "https://syncezy.com/why-we-run-a-bug-bounty-program-and-why-its-worth-the-noise/",
+    "scope": "integrations.syncezy.com + APIs only (WordPress site/CRM/chat OUT)",
+    "contact": "security@syncezy.com (own blog policy, also mirrored on BugBop)",
+    "rewards": "P1 100 / P2 50 / P3 25 USD, avg paid 47",
+    "safe": "Own policy permanent + marketplace triage, no WP-site noise",
+    "notes": "Integration SaaS AU, 10 paid, blunt scope writing",
+    "desc": "Integration-platform SaaS (Australia) with self-hosted policy.",
+    "added": 63,
+    "difficulty": "easy",
+    "scopeSize": "narrow",
+    "rank": 29
+  },
+  {
     "name": "Websavers",
     "country": "Canada",
     "type": "self-hosted bounty",
@@ -447,7 +463,7 @@
     "added": 61,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 29
+    "rank": 30
   },
   {
     "name": "Strise.ai",
@@ -463,7 +479,7 @@
     "added": 62,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 30
+    "rank": 31
   },
   {
     "name": "Floy",
@@ -479,7 +495,7 @@
     "added": 10,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 31
+    "rank": 32
   },
   {
     "name": "hCaptcha",
@@ -495,7 +511,7 @@
     "added": 37,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 32
+    "rank": 33
   },
   {
     "name": "ReadMe",
@@ -511,7 +527,7 @@
     "added": 38,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 33
+    "rank": 34
   },
   {
     "name": "Fastmail",
@@ -527,7 +543,7 @@
     "added": 27,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 34
+    "rank": 35
   },
   {
     "name": "Athento",
@@ -543,7 +559,7 @@
     "added": 28,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 35
+    "rank": 36
   },
   {
     "name": "Bright Data",
@@ -559,7 +575,7 @@
     "added": 16,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 36
+    "rank": 37
   },
   {
     "name": "Zoho",
@@ -575,7 +591,7 @@
     "added": 13,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 37
+    "rank": 38
   },
   {
     "name": "ClickPost",
@@ -591,7 +607,7 @@
     "added": 14,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 38
+    "rank": 39
   },
   {
     "name": "Wildix",
@@ -607,7 +623,7 @@
     "added": 30,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 39
+    "rank": 40
   },
   {
     "name": "Missive",
@@ -623,7 +639,7 @@
     "added": 29,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 40
+    "rank": 41
   },
   {
     "name": "Zenarmor",
@@ -639,7 +655,7 @@
     "added": 32,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 41
+    "rank": 42
   },
   {
     "name": "CodeRabbit",
@@ -655,7 +671,7 @@
     "added": 1,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 42
+    "rank": 43
   },
   {
     "name": "Ably",
@@ -671,7 +687,7 @@
     "added": 3,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 43
+    "rank": 44
   },
   {
     "name": "Atmail",
@@ -687,7 +703,7 @@
     "added": 4,
     "difficulty": "easy",
     "scopeSize": "wide",
-    "rank": 44
+    "rank": 45
   },
   {
     "name": "CleanShot",
@@ -703,7 +719,7 @@
     "added": 5,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 45
+    "rank": 46
   },
   {
     "name": "Glia",
@@ -719,7 +735,7 @@
     "added": 6,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 46
+    "rank": 47
   },
   {
     "name": "Socket",
@@ -735,7 +751,7 @@
     "added": 7,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 47
+    "rank": 48
   },
   {
     "name": "Kontent.ai",
@@ -751,7 +767,7 @@
     "added": 8,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 48
+    "rank": 49
   },
   {
     "name": "Simbase",
@@ -767,7 +783,7 @@
     "added": 9,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 49
+    "rank": 50
   },
   {
     "name": "GitKraken",
@@ -783,7 +799,7 @@
     "added": 18,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 50
+    "rank": 51
   },
   {
     "name": "InterWorx",
@@ -799,7 +815,7 @@
     "added": 19,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 51
+    "rank": 52
   },
   {
     "name": "Optimoz",
@@ -815,7 +831,7 @@
     "added": 17,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 52
+    "rank": 53
   },
   {
     "name": "Birdeye.so",
@@ -831,7 +847,7 @@
     "added": 23,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 53
+    "rank": 54
   },
   {
     "name": "Pokee.ai",
@@ -847,7 +863,7 @@
     "added": 20,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 54
+    "rank": 55
   },
   {
     "name": "Dashverse",
@@ -863,7 +879,7 @@
     "added": 25,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 55
+    "rank": 56
   },
   {
     "name": "Beggi Beggi",
@@ -879,7 +895,7 @@
     "added": 26,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 56
+    "rank": 57
   },
   {
     "name": "Cybozu",
@@ -895,7 +911,7 @@
     "added": 15,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 57
+    "rank": 58
   },
   {
     "name": "Genians",
@@ -911,7 +927,7 @@
     "added": 39,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 58
+    "rank": 59
   },
   {
     "name": "HSPACE",
@@ -927,7 +943,7 @@
     "added": 40,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 59
+    "rank": 60
   },
   {
     "name": "Fusiora",
@@ -943,7 +959,7 @@
     "added": 35,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 60
+    "rank": 61
   },
   {
     "name": "Paheko",
@@ -959,7 +975,7 @@
     "added": 36,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 61
+    "rank": 62
   },
   {
     "name": "Range (docs.range.org)",
@@ -975,6 +991,6 @@
     "added": 2,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 62
+    "rank": 63
   }
 ]
