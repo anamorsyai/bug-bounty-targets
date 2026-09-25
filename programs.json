@@ -502,5 +502,17 @@
     "safe": "Good-faith only, one vuln per report, no law violation",
     "notes": "Founder-direct email, IDOR/SQLi/RCE/SSRF scope",
     "desc": "Funnel-builder SaaS with direct founder reporting email."
+  },
+  {
+    "name": "HypeHost",
+    "country": "Brazil",
+    "type": "self-hosted bounty",
+    "url": "https://hypehost.com.br/company/bug-bounty",
+    "scope": "Main site + control panel + client area + support systems (authorized only)",
+    "contact": "security@jeskesolutions.net",
+    "rewards": "To R$ 8000 (tiers R$ 3000-8000), paid in 12 business hours via crypto or Pix",
+    "safe": "Mark [BUG BOUNTY ALERT] in tickets/forms, stop on customer data exposure, moderate auto tools",
+    "notes": "VPS/hosting SaaS Sao Paulo, fastest payout here",
+    "desc": "VPS/hosting SaaS (Brazil) with panel, client area and support scope."
   }
 ]
