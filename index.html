@@ -5,40 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bug Bounty Targets — obscure SaaS + self-hosted</title>
 <style>
-:root{--bg:#0b0f17;--card:#131a26;--border:#223;--txt:#e8edf5;--mut:#93a0b8;--acc:#22d3ee;--acc2:#a78bfa;--good:#34d399}
+:root{--bg:#070b14;--card:rgba(19,26,38,.85);--border:rgba(148,163,184,.14);--txt:#eef2f9;--mut:#8fa0bb;--acc:#22d3ee;--acc2:#a78bfa;--good:#34d399}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;padding:24px;max-width:1200px;margin:auto}
-header{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between;margin-bottom:18px}
-h1{font-size:28px}h1 span{color:var(--acc)}
-.sub{color:var(--mut);margin-top:6px;font-size:14px}
-.stats{display:flex;gap:10px;flex-wrap:wrap}
-.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 16px;font-size:13px;color:var(--mut)}
-.stat b{display:block;font-size:20px;color:var(--txt)}
-.bar{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;position:sticky;top:0;background:var(--bg);padding:12px 0;z-index:5}
-input,select{background:var(--card);border:1px solid var(--border);color:var(--txt);border-radius:10px;padding:10px 12px;font-size:14px}
-input{flex:2;min-width:220px}select{flex:1;min-width:160px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+body{background:var(--bg);background-image:radial-gradient(900px 400px at 15% -5%,rgba(34,211,238,.12),transparent),radial-gradient(800px 380px at 90% 0%,rgba(167,139,250,.14),transparent);color:var(--txt);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding:28px 22px 40px;max-width:1220px;margin:auto;min-height:100vh}
+.hero{background:linear-gradient(135deg,rgba(34,211,238,.14),rgba(167,139,250,.14));border:1px solid var(--border);border-radius:20px;padding:28px 26px;margin-bottom:18px;backdrop-filter:blur(6px)}
+.hero h1{font-size:clamp(26px,4vw,38px);letter-spacing:-.5px}
+.hero h1 .grad{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);margin-top:8px;font-size:14.5px;max-width:720px;line-height:1.6}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.stat{background:rgba(7,11,20,.55);border:1px solid var(--border);border-radius:14px;padding:10px 18px;font-size:12px;color:var(--mut);min-width:110px}
+.stat b{display:block;font-size:22px;color:var(--txt);background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 4px;position:sticky;top:10px;background:rgba(7,11,20,.82);border:1px solid var(--border);border-radius:16px;padding:12px;z-index:5;backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+input,select{background:#0d1422;border:1px solid var(--border);color:var(--txt);border-radius:10px;padding:10px 12px;font-size:14px;outline:none;transition:border .15s}
+input:focus,select:focus{border-color:var(--acc)}
+input{flex:2;min-width:220px}select{flex:1;min-width:150px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin-top:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:9px;position:relative;overflow:hidden;transition:transform .18s,box-shadow .18s,border-color .18s}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--acc),var(--acc2));opacity:.85}
+.card.easy::before{background:linear-gradient(90deg,#34d399,#22d3ee)}
+.card.medium::before{background:linear-gradient(90deg,#fbbf24,#f472b6)}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(34,211,238,.12);border-color:rgba(34,211,238,.35)}
 .card h3{font-size:17px}.card h3 a{color:var(--txt);text-decoration:none}.card h3 a:hover{color:var(--acc)}
 .badges{display:flex;gap:6px;flex-wrap:wrap}
-.b{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);color:var(--mut)}
-.b.c{color:#7dd3fc;border-color:#155e75}.b.t{color:#c4b5fd;border-color:#5b21b6}
-.b.de{color:#6ee7b7;border-color:#065f46}.b.dm{color:#fcd34d;border-color:#92400e}
-.b.sw{color:#93c5fd;border-color:#1e40af}.b.sm{color:#d6b4fe;border-color:#6b21a8}.b.sn{color:#f9a8d4;border-color:#9d174d}
-.count{color:var(--mut);font-size:13px;margin:4px 0 0}
-.row{font-size:13px;color:var(--mut);line-height:1.5}.row b{color:var(--txt);font-weight:600}
-.reward{color:var(--good);font-size:13px}
-.desc{font-size:13.5px;color:var(--txt);opacity:.92;line-height:1.5}
-.btn{margin-top:auto;display:inline-block;text-align:center;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121a;font-weight:700;border-radius:10px;padding:9px;text-decoration:none;font-size:14px}
-footer{margin:26px 0;color:var(--mut);font-size:13px;text-align:center}
-code{background:#0e1626;padding:2px 6px;border-radius:6px}
+.b{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;border:1px solid transparent;letter-spacing:.2px}
+.b.c{background:rgba(56,189,248,.12);color:#7dd3fc;border-color:rgba(56,189,248,.3)}
+.b.t{background:rgba(167,139,250,.12);color:#c4b5fd;border-color:rgba(167,139,250,.3)}
+.b.de{background:rgba(52,211,153,.12);color:#6ee7b7;border-color:rgba(52,211,153,.3)}
+.b.dm{background:rgba(251,191,36,.12);color:#fcd34d;border-color:rgba(251,191,36,.3)}
+.b.sw{background:rgba(96,165,250,.14);color:#93c5fd;border-color:rgba(96,165,250,.32)}
+.b.sm{background:rgba(192,132,252,.12);color:#d6b4fe;border-color:rgba(192,132,252,.3)}
+.b.sn{background:rgba(249,168,212,.12);color:#f9a8d4;border-color:rgba(249,168,212,.3)}
+.count{color:var(--mut);font-size:13px;margin:10px 2px 0}
+.row{font-size:13px;color:var(--mut);line-height:1.55}.row b{color:#cbd5e1;font-weight:600}
+.reward{color:var(--good);font-size:13.5px;font-weight:600;background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.22);border-radius:10px;padding:7px 10px}
+.desc{font-size:13.5px;color:#dbe3f0;line-height:1.55}
+.btn{margin-top:auto;display:inline-block;text-align:center;background:linear-gradient(90deg,var(--acc),var(--acc2));color:#04121a;font-weight:800;border-radius:12px;padding:10px;text-decoration:none;font-size:14px;transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+footer{margin:30px 0 6px;color:var(--mut);font-size:13px;text-align:center;line-height:1.8}
+code{background:#0e1626;padding:2px 6px;border-radius:6px;color:#a5f3fc}
 </style>
 </head>
 <body>
-<header>
+<header class="hero">
 <div>
-<h1>🎯 Bug Bounty <span>Targets</span></h1>
-<div class="sub">Obscure + self-hosted + small SaaS from many countries. Low crowd, real payouts. Edit <code>programs.json</code> to add more.</div>
+<h1>🎯 Bug Bounty <span class="grad">Targets</span></h1>
+<div class="sub">Obscure, self-hosted SaaS bounties from many countries — low crowd, real payouts, beginner→medium. Pick a card, check scope, hunt responsibly.</div>
 </div>
 <div class="stats">
 <div class="stat"><b id="sTotal">–</b>programs</div>
@@ -64,7 +75,7 @@ code{background:#0e1626;padding:2px 6px;border-radius:6px}
 </div>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
-<footer>Built for hunters • To add a program just append an object to <code>programs.json</code> • Always respect scope + safe harbor.</footer>
+<footer>Built for hunters 🎯 • Add programs in <code>programs.json</code> • Always respect scope + safe harbor — out-of-scope testing is illegal.</footer>
 <script>
 let DATA=[];
 const grid=document.getElementById('grid'),q=document.getElementById('q'),fT=document.getElementById('fType'),fC=document.getElementById('fCountry'),fD=document.getElementById('fDiff'),fS=document.getElementById('fScope'),fSort=document.getElementById('fSort'),count=document.getElementById('count');
@@ -103,8 +114,8 @@ function render(){
   const dTxt=d=>d==='easy'?'🟢 easy':'🟡 medium',sTxt=s=>s==='wide'?'📡 wide':(s==='narrow'?'🎯 narrow':'📶 medium');
   count.textContent=`Showing ${list.length} of ${DATA.length} programs`;
   grid.innerHTML=list.map(p=>`
-  <div class="card">
-    <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">🔗 ${esc(p.name)}</a></h3>
+  <div class="card ${esc(p.difficulty||'')}">
+    <h3><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)} ↗</a></h3>
     <div class="badges"><span class="b c">${esc(p.country)}</span><span class="b t">${esc(p.type)}</span><span class="b ${dBadge(p.difficulty)}">${dTxt(p.difficulty)}</span><span class="b ${sBadge(p.scopeSize)}">${sTxt(p.scopeSize)}</span></div>
     <div class="desc">${esc(p.desc)}</div>
     <div class="reward">💰 ${esc(p.rewards)}</div>
