@@ -285,7 +285,9 @@
     "notes": "Hosting SaaS Africa, 2d ack 10d triage 21d pay, honest small-team policy",
     "desc": "African hosting SaaS with panel, API and free test accounts.",
     "added": 51,
-    "rank": 19
+    "rank": 19,
+    "difficulty": "medium",
+    "scopeSize": "wide"
   },
   {
     "name": "LoginRadius",
@@ -299,7 +301,9 @@
     "notes": "Identity SaaS - auth bugs goldmine",
     "desc": "Customer-identity (CIAM) SaaS platform.",
     "added": 52,
-    "rank": 20
+    "rank": 20,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Plumsail",
@@ -313,7 +317,9 @@
     "notes": "SharePoint-forms SaaS, use-case required in report",
     "desc": "SharePoint forms/documents SaaS for businesses.",
     "added": 53,
-    "rank": 21
+    "rank": 21,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "MyPup",
@@ -327,7 +333,9 @@
     "notes": "Parcel-locker SaaS NL, precise tier table",
     "desc": "Parcel-locker logistics SaaS (Netherlands).",
     "added": 54,
-    "rank": 22
+    "rank": 22,
+    "difficulty": "easy",
+    "scopeSize": "narrow"
   },
   {
     "name": "alwaysdata",
@@ -341,7 +349,9 @@
     "notes": "Hosting SaaS FR, fix goal 10d post-triage",
     "desc": "French hosting SaaS with panel, mail and API scope.",
     "added": 55,
-    "rank": 23
+    "rank": 23,
+    "difficulty": "medium",
+    "scopeSize": "medium"
   },
   {
     "name": "Conveyor",
@@ -355,7 +365,9 @@
     "notes": "Trust/security-review SaaS incl. MCP endpoint",
     "desc": "Vendor-trust review SaaS with app, API and MCP surface.",
     "added": 56,
-    "rank": 24
+    "rank": 24,
+    "difficulty": "medium",
+    "scopeSize": "narrow"
   },
   {
     "name": "Asiri",
@@ -369,7 +381,9 @@
     "notes": "Compliance SaaS NG, pays then publishes, argues allowed",
     "desc": "Compliance-registers SaaS (Nigeria) with API and connectors.",
     "added": 57,
-    "rank": 25
+    "rank": 25,
+    "difficulty": "easy",
+    "scopeSize": "medium"
   },
   {
     "name": "Floy",
