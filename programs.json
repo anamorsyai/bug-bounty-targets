@@ -514,6 +514,54 @@
     "rank": 33
   },
   {
+    "name": "easyname",
+    "country": "Austria",
+    "type": "self-hosted bounty",
+    "url": "https://www.easyname.at/en/support/easyname/253-bug-bounty-program",
+    "scope": "webmail.easyname.com + hosting/mail platforms + www + my.easyname.com controlpanel",
+    "contact": "bugbounty[AT]easyname.com (repro PoC, impact detail = higher pay)",
+    "rewards": "Controlpanel 10000 / Webmail+Hosting 7500 / Website 2500 EUR",
+    "safe": "Coordinated disclosure, release-cycle credit",
+    "notes": "Austrian hosting SaaS, top tiers here",
+    "desc": "Domain/hosting SaaS (Austria) with panel and webmail scope.",
+    "added": 81,
+    "difficulty": "medium",
+    "scopeSize": "medium",
+    "rank": 34
+  },
+  {
+    "name": "Jobber",
+    "country": "Canada",
+    "type": "self-hosted bounty",
+    "url": "https://www.getjobber.com/security/bug-bounty/",
+    "scope": "*.getjobber.com + iOS/Android apps (staging/dev OUT)",
+    "contact": "bugbounty@getjobber.com + form, unlimited bounties, fix-then-pay 90d",
+    "rewards": "500+ / 300 / 100 CAD tiers (higher tiers apply), PayPal",
+    "safe": "First discovery only, tax forms may be needed",
+    "notes": "Field-service SaaS CA, partial table visible",
+    "desc": "Field-service management SaaS (Canada).",
+    "added": 82,
+    "difficulty": "medium",
+    "scopeSize": "medium",
+    "rank": 35
+  },
+  {
+    "name": "UXCam",
+    "country": "Global",
+    "type": "self-hosted bounty",
+    "url": "https://uxcam.com/bug-bounty/",
+    "scope": "*.uxcam.com + *.uxc.am app (14-day trial, X-User-Id header)",
+    "contact": "portal + security [at] uxcam [dot] com for Qs",
+    "rewards": "P1 650-1000 / P2 300-650 / P3 150-300 / P4 50-150 USD, min 50 max 1000 PayPal/bank",
+    "safe": "One vuln per report, 14d silence = closed, impact must be shown",
+    "notes": "Mobile-analytics SaaS, trial provided",
+    "desc": "Mobile app-analytics SaaS with trial accounts.",
+    "added": 83,
+    "difficulty": "medium",
+    "scopeSize": "medium",
+    "rank": 36
+  },
+  {
     "name": "Piwik PRO",
     "country": "Poland",
     "type": "self-hosted bounty",
@@ -527,7 +575,7 @@
     "added": 76,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 34
+    "rank": 37
   },
   {
     "name": "Matomo",
@@ -543,7 +591,7 @@
     "added": 79,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 35
+    "rank": 38
   },
   {
     "name": "PubNub",
@@ -559,7 +607,7 @@
     "added": 77,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 36
+    "rank": 39
   },
   {
     "name": "Thordata",
@@ -575,7 +623,7 @@
     "added": 73,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 37
+    "rank": 40
   },
   {
     "name": "Desku.io",
@@ -591,7 +639,7 @@
     "added": 74,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 38
+    "rank": 41
   },
   {
     "name": "Qdrant",
@@ -607,7 +655,7 @@
     "added": 70,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 39
+    "rank": 42
   },
   {
     "name": "vntrAI",
@@ -623,7 +671,7 @@
     "added": 71,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 40
+    "rank": 43
   },
   {
     "name": "E-goi",
@@ -639,7 +687,7 @@
     "added": 64,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 41
+    "rank": 44
   },
   {
     "name": "TeachFX",
@@ -655,7 +703,7 @@
     "added": 65,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 42
+    "rank": 45
   },
   {
     "name": "Ryne.ai",
@@ -671,7 +719,7 @@
     "added": 66,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 43
+    "rank": 46
   },
   {
     "name": "Tilda",
@@ -687,7 +735,7 @@
     "added": 67,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 44
+    "rank": 47
   },
   {
     "name": "InstiKit",
@@ -703,7 +751,7 @@
     "added": 68,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 45
+    "rank": 48
   },
   {
     "name": "Websavers",
@@ -719,7 +767,7 @@
     "added": 61,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 46
+    "rank": 49
   },
   {
     "name": "Strise.ai",
@@ -735,7 +783,7 @@
     "added": 62,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 47
+    "rank": 50
   },
   {
     "name": "Floy",
@@ -751,7 +799,7 @@
     "added": 10,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 48
+    "rank": 51
   },
   {
     "name": "hCaptcha",
@@ -767,7 +815,7 @@
     "added": 37,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 49
+    "rank": 52
   },
   {
     "name": "ReadMe",
@@ -783,7 +831,7 @@
     "added": 38,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 50
+    "rank": 53
   },
   {
     "name": "Fastmail",
@@ -799,7 +847,7 @@
     "added": 27,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 51
+    "rank": 54
   },
   {
     "name": "Athento",
@@ -815,7 +863,7 @@
     "added": 28,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 52
+    "rank": 55
   },
   {
     "name": "Bright Data",
@@ -831,7 +879,7 @@
     "added": 16,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 53
+    "rank": 56
   },
   {
     "name": "Zoho",
@@ -847,7 +895,7 @@
     "added": 13,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 54
+    "rank": 57
   },
   {
     "name": "ClickPost",
@@ -863,7 +911,7 @@
     "added": 14,
     "difficulty": "easy",
     "scopeSize": "medium",
-    "rank": 55
+    "rank": 58
   },
   {
     "name": "Wildix",
@@ -879,7 +927,7 @@
     "added": 30,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 56
+    "rank": 59
   },
   {
     "name": "Missive",
@@ -895,7 +943,7 @@
     "added": 29,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 57
+    "rank": 60
   },
   {
     "name": "Zenarmor",
@@ -911,7 +959,7 @@
     "added": 32,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 58
+    "rank": 61
   },
   {
     "name": "CodeRabbit",
@@ -927,7 +975,7 @@
     "added": 1,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 59
+    "rank": 62
   },
   {
     "name": "Ably",
@@ -943,7 +991,7 @@
     "added": 3,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 60
+    "rank": 63
   },
   {
     "name": "Atmail",
@@ -959,7 +1007,7 @@
     "added": 4,
     "difficulty": "easy",
     "scopeSize": "wide",
-    "rank": 61
+    "rank": 64
   },
   {
     "name": "CleanShot",
@@ -975,7 +1023,7 @@
     "added": 5,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 62
+    "rank": 65
   },
   {
     "name": "Glia",
@@ -991,7 +1039,7 @@
     "added": 6,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 63
+    "rank": 66
   },
   {
     "name": "Socket",
@@ -1007,7 +1055,7 @@
     "added": 7,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 64
+    "rank": 67
   },
   {
     "name": "Kontent.ai",
@@ -1023,7 +1071,7 @@
     "added": 8,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 65
+    "rank": 68
   },
   {
     "name": "Simbase",
@@ -1039,7 +1087,7 @@
     "added": 9,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 66
+    "rank": 69
   },
   {
     "name": "GitKraken",
@@ -1055,7 +1103,7 @@
     "added": 18,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 67
+    "rank": 70
   },
   {
     "name": "InterWorx",
@@ -1071,7 +1119,7 @@
     "added": 19,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 68
+    "rank": 71
   },
   {
     "name": "Optimoz",
@@ -1087,7 +1135,7 @@
     "added": 17,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 69
+    "rank": 72
   },
   {
     "name": "Birdeye.so",
@@ -1103,7 +1151,7 @@
     "added": 23,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 70
+    "rank": 73
   },
   {
     "name": "Pokee.ai",
@@ -1119,7 +1167,7 @@
     "added": 20,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 71
+    "rank": 74
   },
   {
     "name": "Dashverse",
@@ -1135,7 +1183,7 @@
     "added": 25,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 72
+    "rank": 75
   },
   {
     "name": "Beggi Beggi",
@@ -1151,7 +1199,7 @@
     "added": 26,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 73
+    "rank": 76
   },
   {
     "name": "Cybozu",
@@ -1167,7 +1215,7 @@
     "added": 15,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 74
+    "rank": 77
   },
   {
     "name": "Genians",
@@ -1183,7 +1231,7 @@
     "added": 39,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 75
+    "rank": 78
   },
   {
     "name": "HSPACE",
@@ -1199,7 +1247,7 @@
     "added": 40,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 76
+    "rank": 79
   },
   {
     "name": "Fusiora",
@@ -1215,7 +1263,7 @@
     "added": 35,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 77
+    "rank": 80
   },
   {
     "name": "Paheko",
@@ -1231,7 +1279,7 @@
     "added": 36,
     "difficulty": "medium",
     "scopeSize": "medium",
-    "rank": 78
+    "rank": 81
   },
   {
     "name": "Range (docs.range.org)",
@@ -1247,7 +1295,7 @@
     "added": 2,
     "difficulty": "medium",
     "scopeSize": "wide",
-    "rank": 79
+    "rank": 82
   },
   {
     "name": "Smackdab.ai",
@@ -1263,6 +1311,6 @@
     "added": 41,
     "difficulty": "easy",
     "scopeSize": "narrow",
-    "rank": 80
+    "rank": 83
   }
 ]
